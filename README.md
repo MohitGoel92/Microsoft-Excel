@@ -22,3 +22,7 @@ If we produce a table with headings and numerical data, we notice that the numer
 
 **Note:** Dates are treated as numerical data, therefore they will be right aligned.
 
+### Date Formatting
+
+If we wish to change the date setting of a cell(s), we simply highlight the cells, select the home tab and select the drop down arrow at the Number section. In the dropdown menu, we can either select a pre-set option or select More Number Formats if we wish to specify a setting that is not showing. We now either select an option from the Date Category or select Customer Category and manually specify the setting we desire. An example where this is useful is if we wanted the date format to be mmm-yyyy as it is not available as a pre-set option.
+
