@@ -20,3 +20,5 @@ If we produce a table with headings and numerical data, we notice that the numer
 
 **Note:** If Excel shows a green triangle at the top left corner of the cell, that means Excel is unsure whether to classify the cell contents as a number or string. This can be resolved by clicking the triangle and setting it to numerical or string.
 
+**Note:** Dates are treated as numerical data, therefore they will be right aligned.
+
