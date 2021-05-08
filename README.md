@@ -43,3 +43,13 @@ There are two types of cell references: relative and absolute. Relative and abso
 - An absolute cell reference will not change if a formula is copied to another cell in the worksheet.
 - In order to make a specific cell absolute, we add a dollar sign ($) before the column and/or the row reference. For example, if we wish to make the cell A1 absolute we use $A$1.
 
+## Working with Basic Excel Functions
+
+**Excel Function:** A predefined formula that performs a calculation.
+
+An example of an Excel Function is the SUM function. For example, if we wished to sum up a column of values, the function may look something like:
+
+```
+=SUM(A2:A10)
+```
+
