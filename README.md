@@ -26,3 +26,11 @@ If we produce a table with headings and numerical data, we notice that the numer
 
 If we wish to change the date setting of a cell(s), we simply highlight the cells, select the home tab and select the drop down arrow at the Number section. In the dropdown menu, we can either select a pre-set option or select More Number Formats if we wish to specify a setting that is not showing. We now either select an option from the Date Category or select Customer Category and manually specify the setting we desire. An example where this is useful is if we wanted the date format to be mmm-yyyy as it is not available as a pre-set option.
 
+### Zooming In/Out of the Excel Worksheet
+
+We can either hold down the CTRL key and use the mouse wheel or we can use the zoom bar which is at the bottom right of the worksheet.
+
+### Relative Vs Absolute Cell References
+
+There are two types of cell references: relative and absolute. Relative and absolute references behave differently when copied and filled to other cells. Relative references change when a formula is copied to another cell. Absolute references, on the other hand, remain constant no matter where they are copied.
+
