@@ -34,3 +34,5 @@ We can either hold down the CTRL key and use the mouse wheel or we can use the z
 
 There are two types of cell references: relative and absolute. Relative and absolute references behave differently when copied and filled to other cells. Relative references change when a formula is copied to another cell. Absolute references, on the other hand, remain constant no matter where they are copied.
 
+**Note:** A cell can be made absolute by using the dollar sign ($) in the formula.
+
