@@ -9,7 +9,7 @@ Before we get started with the technicalities of Excel, let's begin with some ba
 - The Quick Access Toolbar that is located at the top left corner of the application (the green bar) provides access to some of the basic Excel commands.
 - We may select any function that we commonly use and pin it to the Quick Access Toolbar for quick utilisation anytime. We only need to simply right click on any command found on the ribbon and select "Add to Quick Access Toolbar".
 
-## Working with Numerical Data
+## Entering and Editing Text and Formulas
 
 We are free to simply click on any cell and enter any numerical or alphabetical data (or a combination of both) into the cell.
 
@@ -35,4 +35,11 @@ We can either hold down the CTRL key and use the mouse wheel or we can use the z
 There are two types of cell references: relative and absolute. Relative and absolute references behave differently when copied and filled to other cells. Relative references change when a formula is copied to another cell. Absolute references, on the other hand, remain constant no matter where they are copied.
 
 **Note:** A cell can be made absolute by using the dollar sign ($) in the formula.
+
+### Things to Remember
+
+- The standard way of starting an Excel calculation is with the equals (=) sign.
+- Any reference to a specific cell must by referenced by the column first and then the row. For example, cell A1 (column = A and row = 1).
+- An absolute cell reference will not change if a formula is copied to another cell in the worksheet.
+- In order to make a specific cell absolute, we add a dollar sign ($) before the column and/or the row reference. For example, if we wish to make the cell A1 absolute we use $A$1.
 
