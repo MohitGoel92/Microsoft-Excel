@@ -59,3 +59,7 @@ An example of an Excel Function is the SUM function. For example, if we wished t
 
 **Note:** After a function has been applied, we may see a green triangle at the top left corner of the cell. This is due to Excel trying to assist us as Excel has no context, as it only differentiates between a string or numerical data. Once we have checked the current function and it is correct, it is good practice to remove the warning so the viewers see a clean Excel sheet.
 
+**Note:** The small square at the bottom right of the cell is Auto Fill. We can drag this to replicate formulas in nearby cells.
+
+**Note: AutoSum** In the Formulas tab, the most common statistical functions are categorised in the AutoSum category. The keyboard shortcut for AutoSum is *ALT + =*.
+
