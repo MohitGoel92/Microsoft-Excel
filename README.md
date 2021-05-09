@@ -63,3 +63,14 @@ An example of an Excel Function is the SUM function. For example, if we wished t
 
 **Note: AutoSum** In the Formulas tab, the most common statistical functions are categorised in the AutoSum category. The keyboard shortcut for AutoSum is *ALT + =*.
 
+## Modifying an Excel Worksheet
+
+**Note:** We can highlight the entire area which contains the data, place the cursor on the edge of the highlighted area and move the data to a new desired location. This can also be achieved by adding/removing columns/rows in the worksheet or using cut/copy and paste. To insert rows/columns we can either go onto the Home tab and use the functions under the Cells category, or use the keyboard shortcuts:
+
+```
+SHIFT + SPACE (highlight row)
+CTRL + SPACE (highlight column)
+CTRL + SHIFT + + (add the row/column)
+CTRL + - (remove the row/column)
+```
+
