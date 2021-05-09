@@ -61,11 +61,14 @@ An example of an Excel Function is the SUM function. For example, if we wished t
 
 **Note:** The small square at the bottom right of the cell is Auto Fill. We can drag this to replicate formulas in nearby cells.
 
-**Note: AutoSum** In the Formulas tab, the most common statistical functions are categorised in the AutoSum category. The keyboard shortcut for AutoSum is *ALT + =*.
+**Note: AutoSum** In the Formulas tab, the most common statistical functions are categorised in the AutoSum category. The keyboard shortcut for AutoSum is:
+```
+ALT + =
+```
 
 ## Modifying an Excel Worksheet
 
-**Note:** We can highlight the entire area which contains the data, place the cursor on the edge of the highlighted area and move the data to a new desired location. This can also be achieved by adding/removing columns/rows in the worksheet or using cut/copy and paste. To insert rows/columns we can either go onto the Home tab and use the functions under the Cells category, or use the keyboard shortcuts:
+We can highlight the entire area which contains the data, place the cursor on the edge of the highlighted area and move the data to a new desired location. This can also be achieved by adding/removing columns/rows in the worksheet or using cut/copy and paste. To insert rows/columns we can either go onto the Home tab and use the functions under the Cells category, or use the keyboard shortcuts:
 
 ```
 SHIFT + SPACE (highlight row)
@@ -74,3 +77,6 @@ CTRL + SHIFT + + (add the row/column)
 CTRL + - (remove the row/column)
 ```
 
+To make a column or row the appropriate size, we can double click between the two letters or numbers where the spacing issue lies. In addition, we can click the triangle at the top-left corner of the worksheet which will highlight the whole worksheet, and double click between any two numbers or alphabets. This will ensure appropriate spacing between all the rows and/or columns across the whole worksheet. Similarly, we can make all the columns or rows the same size by selecting the triangle at the top-left of the worksheet and manually altering the size of the column or row. 
+
+We can also hide a column(s) or row(s) by highlighting them, right clicking and selecting hide in the menu. Equally, we can highlight the columns/rows, right click and select unhide.
