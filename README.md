@@ -98,6 +98,7 @@ In the Home tab, we see a Number category which allows us to alter the number of
 The Format Painter is located in the Home tab in the Clipboard category. This allows us to copy the format of another cell and apply the same format to however many cells we desire. If we double click the Format Painter, we can keep clicking cells in order to replicate the same format; to turn it off we are required to either select Format Painter again or press the ESC key.
 
 Cell styles is saved formatting which is reused for formatting whenever it is required in the future. This is located in the Home tab in the Styles category.
+
 **Note:** Conditional Formatting can also be performed using the option here. This is when cells are highlighted given a criteria, for example, showing cells red if the value is greater than £500. We can change these rules at any time by selecting Conditional Formatting and Managing Rules.
 
 To Merge cells or Wrap Text, we go to the Home tab and are able to select these options from the Alignment category.
