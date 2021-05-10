@@ -80,3 +80,9 @@ CTRL + - (remove the row/column)
 To make a column or row the appropriate size, we can double click between the two letters or numbers where the spacing issue lies. In addition, we can click the triangle at the top-left corner of the worksheet which will highlight the whole worksheet, and double click between any two numbers or alphabets. This will ensure appropriate spacing between all the rows and/or columns across the whole worksheet. Similarly, we can make all the columns or rows the same size by selecting the triangle at the top-left of the worksheet and manually altering the size of the column or row. 
 
 We can also hide a column(s) or row(s) by highlighting them, right clicking and selecting hide in the menu. Equally, we can highlight the columns/rows, right click and select unhide.
+
+To rename or delete a worksheet, simply right click the sheet tab at the bottom and select rename/delete. Alternatively, if we wish to rename the sheet we can double click the sheet name and edit.
+
+**Note:** When you delete a worksheet in Excel, you cannot undue this step. In the event a worksheet has been regrettably deleted, we can close Excel without saving to prevent that worksheet being deleted, however, this will result in losing all the changes we have made after the latest save.
+
+To reorder the sheets, we simple drag and drop the sheet to the place we desire. And if we wish to copy a sheet, we simply hold CTRL, select the sheet and drag it to the right and drop. In addition, if we wish to copy or move a sheet from our current workbook to another workbook, we simply right click the worksheet, select move or copy and send it to either an existing workbook or create a new workbook there and then.
