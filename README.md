@@ -86,3 +86,10 @@ To rename or delete a worksheet, simply right click the sheet tab at the bottom 
 **Note:** When you delete a worksheet in Excel, you cannot undue this step. In the event a worksheet has been regrettably deleted, we can close Excel without saving to prevent that worksheet being deleted, however, this will result in losing all the changes we have made after the latest save.
 
 To reorder the sheets, we simple drag and drop the sheet to the place we desire. And if we wish to copy a sheet, we simply hold CTRL, select the sheet and drag it to the right and drop. In addition, if we wish to copy or move a sheet from our current workbook to another workbook, we simply right click the worksheet, select move or copy and send it to either an existing workbook or create a new workbook there and then.
+
+## Formatting Data in an Excel Worksheet
+
+### Font Formatting and Themes
+
+In the Home tab we see a category called Font. Here we can change the Font Theme, Colour, Size, Bold, Italic, Underline ... etc. We are also able to change the theme of the workbook entirely. This is achieved by selecting the Page Layout tab and selecting Themes, Colours, Fonts or Effects from the Themes category.
+
