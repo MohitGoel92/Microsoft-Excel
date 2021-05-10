@@ -91,5 +91,9 @@ To reorder the sheets, we simple drag and drop the sheet to the place we desire.
 
 ### Font Formatting and Themes
 
-In the Home tab we see a category called Font. Here we can change the Font Theme, Colour, Size, Bold, Italic, Underline ... etc. We are also able to change the theme of the workbook entirely. This is achieved by selecting the Page Layout tab and selecting Themes, Colours, Fonts or Effects from the Themes category.
+In the Home tab we see a category called Font. Here we can change the Font Theme, Colour, Size, Bold, Italic, Underline, add a border around a cell(s) ... etc. We are also able to change the theme of the workbook entirely. This is achieved by selecting the Page Layout tab and selecting Themes, Colours, Fonts or Effects from the Themes category.
+
+In the Home tab, we see a Number category which allows us to alter the number of decimal points, whether it's a percentage, comma's or currency. Other functions such as date and time conversions also exist here.
+
+The Format Painter is located in the Home tab in the Clipboard category. This allows us to copy the format of another cell and apply the same format to however many cells we desire. If we double click the Format Painter, we can keep clicking cells in order to replicate the same format; to turn it off we are required to either select Format Painter again or press the ESC key.
 
