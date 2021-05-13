@@ -119,3 +119,5 @@ To produce charts, we highlight the desired data we wish to chart, select the In
 
 The chart(s) we have produced can also be sent/moved to another worksheet. This is done by selecting the chart, going onto the Chart Design tab and selecting Move Chart in the Location category. This is a great way of clearly displaying a chart on full screen and not cluttering a worksheet too much.
 
+## Printing an Excel Worksheet
+
