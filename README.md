@@ -117,3 +117,5 @@ To produce charts, we highlight the desired data we wish to chart, select the In
 
 **Note:** If we wish to alter the data selected by the chart, we select the chart, go onto the Chart Design tab and select Select Data in the Data category. If we unselect data from the menu or manually alter the selected data using CTRL, the axis may still show the names of the previous headings, despite there being no data. To remove this we right click the axis, select Format Axis and under Axis Type select Text axis. This will remove any headings where data has been unselected from.
 
+The chart(s) we have produced can also be sent/moved to another worksheet. This is done by selecting the chart, going onto the Chart Design tab and selecting Move Chart in the Location category. This is a great way of clearly displaying a chart on full screen and not cluttering a worksheet too much.
+
