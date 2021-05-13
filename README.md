@@ -113,3 +113,7 @@ For SmartArt, we go onto the insert tab and click on the Illustrations drop down
 
 ## Creating Charts
 
+To produce charts, we highlight the desired data we wish to chart, select the Insert tab and go onto the Charts category. After we have selected the most fitting chart, it will be produced in the worksheet. Selecting the chart will result in two new tabs being produced, they are the Chart Design and Format tab. These tabs are used to refine the current visual to our specific requirements.
+
+**Note:** If we wish to alter the data selected by the chart, we select the chart, go onto the Chart Design tab and select Select Data in the Data category. If we unselect data from the menu or manually alter the selected data using CTRL, the axis may still show the names of the previous headings, despite there being no data. To remove this we right click the axis, select Format Axis and under Axis Type select Text axis. This will remove any headings where data has been unselected from.
+
