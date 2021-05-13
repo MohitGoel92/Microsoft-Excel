@@ -102,3 +102,14 @@ Cell styles is saved formatting which is reused for formatting whenever it is re
 **Note:** Conditional Formatting can also be performed using the option here. This is when cells are highlighted given a criteria, for example, showing cells red if the value is greater than £500. We can change these rules at any time by selecting Conditional Formatting and Managing Rules.
 
 To Merge cells or Wrap Text, we go to the Home tab and are able to select these options from the Alignment category.
+
+## Inserting Images and Shapes
+
+To insert an image, we go onto the Insert tab and click on the Illustrations drop down menu. To insert an image we select Pictures and to insert a shape we select Shapes.
+
+For SmartArt, we go onto the insert tab and click on the Illustrations drop down menu. To insert SmartArt we select SmartArt and explore the entire selection.
+
+**Note:** If we select the image or shape we have imported, a new tab called SmartArt Design or Shape Format reveals itself. This tab is used to modify our current image or shape.
+
+## Creating Charts
+
