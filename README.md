@@ -121,3 +121,6 @@ The chart(s) we have produced can also be sent/moved to another worksheet. This 
 
 ## Printing an Excel Worksheet
 
+To print an Excel worksheet, select the File tab and go onto Print. The options here will be useful when printing in the best possible format using the settings.
+
+**Note:** In the print settings, if we alternate from Landscape to Portrait we will notice vertical dotted lines. These lines represent page breaks that coincide with the page sizes. Therefore, any visualisation or data that crosses this line will be split up and printed onto different pages. 
