@@ -127,3 +127,11 @@ In the print settings, if we alternate from Landscape to Portrait we will notice
 
 We can use the scaling setting to enlarge certain data or visualisations for clarity and neatness. When scaled, the horizontal and vertical dotted page break lines will also correspond by increasing or decreasing the space between them.
 
+Another option we can utilise is the margins. Decreasing margins may allow more space for additional visuals to be included per page.
+
+To have a birds eye view of the page breaks i.e. how the visuals look per page, we can select the View tab and in the Workbooks Views we select Page Layout.
+
+**Note:** Inside the Page Layout view, we can work with the Header and Footer of the Excel document. If the Header and Footer is not visible, double click the top of the page and it will appear. When a cell of the Header or Footer is selected, a tab called Header & Footer will appear with options such as page numbers, file paths, dates and pictures which can be used to paste as a company logo.
+
+In the Page Layout tab within the Page Setup category, we have an option called Print Area. Setting the print area will print out only that area of a worksheet. This can also be performed by highlighting the cells and selecting the Print Active Sheets options within the print settings.
+
