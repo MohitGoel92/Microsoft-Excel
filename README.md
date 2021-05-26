@@ -15,7 +15,7 @@ We are free to simply click on any cell and enter any numerical or alphabetical 
 
 If we produce a table with headings and numerical data, we notice that the numerical data is aligned to the right of the cell and the alphabetical headings are aligned to the left of the cell. This is the case with the majority of softwares and there are two reasons for this:
 
-- This makes it clearer to differentiate the difference between the alphabetical and numerical data, avoiding confusion and therefore being practical.
+- This makes it clearer to differentiate between the alphabetical and numerical data, avoiding confusion and therefore being practical.
 - As the numerical data is aligned to the right, this makes all decimals perfectly aligned regardless of the differences in the number of decimal places. If the numbers were left aligned, we may see the decimal point fluctuate like a wave as we go down the column which is confusing to the eye and therefore prone to giving a false impression.
 
 **Note:** If Excel shows a green triangle at the top left corner of the cell, that means Excel is unsure whether to classify the cell contents as a number or string. This can be resolved by clicking the triangle and setting it to numerical or string.
