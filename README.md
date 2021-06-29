@@ -137,4 +137,9 @@ In the Page Layout tab within the Page Setup category, we have an option called 
 
 ## Working with Excel Templates
 
-Templates allow us to reuse structures (tables, charts, formulas .. etc) which enables us to efficiently perform preset/standardised tasks. A realistic applicastion of this is sending across reports and dashboard to clients which are standard and 
+Templates allow us to reuse structures (tables, charts, formulas .. etc) which enables us to efficiently perform preset or standardised tasks. A realistic application of this is sending across reports or dashboards to clients or within the company, which involves updating periodical reports with new data. In many companies for a data analyst, this is considered standard practice.
+
+Excel standard templates can be found by selecting *File* -> *New*, and either selecting from the templates presented or searching from the search bar. Once selected, we simply click on the create button.
+
+**Note:** If we are to create our own template, when saving the workbook save it as an *Excel Template*. This option can be found when selecting *Save As* -> *Browse* -> *Save as type*.
+
