@@ -135,3 +135,6 @@ To have a birds eye view of the page breaks i.e. how the visuals look per page, 
 
 In the Page Layout tab within the Page Setup category, we have an option called Print Area. Setting the print area will print out only that area of a worksheet. This can also be performed by highlighting the cells and selecting the Print Active Sheets options within the print settings.
 
+## Working with Excel Templates
+
+Templates allow us to reuse structures (tables, charts, formulas .. etc) which enables us to efficiently perform preset/standardised tasks. A realistic applicastion of this is sending across reports and dashboard to clients which are standard and 
