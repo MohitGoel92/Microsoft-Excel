@@ -7,7 +7,7 @@ Before we get started with the technicalities of Excel, let's begin with some ba
 - Since the 2007 release of Excel, the standard Excel file extension has been changed to .xlsx.
 - An Excel workbook can contain upto 255 worksheets.
 - The Quick Access Toolbar that is located at the top left corner of the application (the green bar) provides access to some of the basic Excel commands.
-- We may select any function that we commonly use and pin it to the Quick Access Toolbar for quick utilisation anytime. We only need to simply right click on any command found on the ribbon and select "Add to Quick Access Toolbar".
+- We may select any function that we commonly use and pin it to the Quick Access Toolbar for quick utilisation anytime. For this, we only require to right click on any command found on the ribbon and select "Add to Quick Access Toolbar".
 
 ## Entering and Editing Text and Formulas
 
