@@ -6,8 +6,8 @@ Before we get started with the technicalities of Excel, let's begin with some ba
 
 - Since the 2007 release of Excel, the standard Excel file extension has been changed to .xlsx.
 - An Excel workbook can contain upto 255 worksheets.
-- The Quick Access Toolbar that is located at the top left corner of the application (the green bar) provides access to some of the basic Excel commands.
-- We may select any function that we commonly use and pin it to the Quick Access Toolbar for quick utilisation anytime. For this, we only require to right click on any command found on the ribbon and select "Add to Quick Access Toolbar".
+- The *Quick Access Toolbar* that is located at the top left corner of the application (the green bar) provides access to some of the basic Excel commands.
+- We may select any function that we commonly use and pin it to the Quick Access Toolbar for quick utilisation anytime. For this, we only require to right click on any command found on the ribbon and select *Add to Quick Access Toolbar*.
 
 ## Entering and Editing Text and Formulas
 
@@ -24,11 +24,11 @@ If we produce a table with headings and numerical data, we notice that the numer
 
 ### Date Formatting
 
-If we wish to change the date setting of a cell(s), we simply highlight the cells, select the home tab and select the drop down arrow at the Number section. In the dropdown menu, we can either select a pre-set option or select More Number Formats if we wish to specify a setting that is not showing. We now either select an option from the Date Category or select Customer Category and manually specify the setting we desire. An example where this is useful is if we wanted the date format to be mmm-yyyy as it is not available as a pre-set option.
+If we wish to change the date setting of a cell(s), we simply highlight the cells, select the home tab and select the drop down arrow in the *Number* section. In the dropdown menu, we can either select a pre-set option or select More Number Formats if we wish to specify a setting that is not showing. We now either select an option from the Date Category or select Customer Category and manually specify the setting we desire. An example where this is useful is if we wanted the date format to be mmm-yyyy as it is not available as a pre-set option.
 
 ### Zooming In/Out of the Excel Worksheet
 
-We can either hold down the CTRL key and use the mouse wheel or we can use the zoom bar which is at the bottom right of the worksheet.
+We can either hold down the *CTRL* key and use the mouse wheel or we can use the zoom bar which is at the bottom right of the worksheet.
 
 ### Relative Vs Absolute Cell References
 
@@ -47,7 +47,7 @@ There are two types of cell references: relative and absolute. Relative and abso
 
 **Excel Function:** A predefined formula that performs a calculation.
 
-An example of an Excel Function is the SUM function. For example, if we wished to sum up a column of values, the function may look something like:
+An example of an Excel Function is the *SUM* function. For example, if we wished to sum up a column of values, the function may look something like:
 
 ```
 =SUM(A2:A10)
@@ -55,20 +55,21 @@ An example of an Excel Function is the SUM function. For example, if we wished t
 
 **Note:** A function has three main parts, they are the equals (=), the function name (SUM, MIN, AVERAGE ... etc) and the arguments/parameters. In the above example, the parameters were the two cells A2 and A10.
 
-**Note:** A list of some common functions can be found by clicking the *fx* button on the left of the formula bar. However, a more extensive list is found when the Formula tab is selected where we will find the functions categorised.
+**Note:** A list of some common functions can be found by clicking the *fx* button on the left of the formula bar. However, a more extensive list is found by selecting the *Formula* tab; here is where we will find the functions categorised.
 
-**Note:** After a function has been applied, we may see a green triangle at the top left corner of the cell. This is due to Excel trying to assist us as Excel has no context, as it only differentiates between a string or numerical data. Once we have checked the current function and it is correct, it is good practice to remove the warning so the viewers see a clean Excel sheet.
+**Note:** After a function has been applied, we may see a green triangle at the top left corner of the cell. This is due to Excel trying to assist us. Excel has no context, as it only differentiates between a string or numerical data. Once we have checked the current function and it is correct, it is good practice to remove the warning so the viewers see a clean Excel sheet.
 
-**Note:** The small square at the bottom right of the cell is Auto Fill. We can drag this to replicate formulas in nearby cells.
+**Note:** The small square at the bottom right of the cell is *Auto Fill*. We can drag this to replicate formulas in nearby cells.
 
-**Note: AutoSum** In the Formulas tab, the most common statistical functions are categorised in the AutoSum category. The keyboard shortcut for AutoSum is:
+**Note: AutoSum** In the Formula tab, the most common statistical functions are categorised in the AutoSum category. The keyboard shortcut for AutoSum is:
+
 ```
 ALT + =
 ```
 
 ## Modifying an Excel Worksheet
 
-We can highlight the entire area which contains the data, place the cursor on the edge of the highlighted area and move the data to a new desired location. This can also be achieved by adding/removing columns/rows in the worksheet or using cut/copy and paste. To insert rows/columns we can either go onto the Home tab and use the functions under the Cells category, or use the keyboard shortcuts:
+We can move the entire data table by highlighting the area which contains the data, placing the cursor on the edge of the highlighted area and moveing the data to the new desired location. This can also be achieved by adding/removing columns/rows in the worksheet or using cut/copy and paste. To insert rows/columns we can either go onto the *Home* tab and use the functions under the Cells category, or use the keyboard shortcuts:
 
 ```
 SHIFT + SPACE (highlight row)
