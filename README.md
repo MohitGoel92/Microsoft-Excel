@@ -144,3 +144,9 @@ Excel standard templates can be found by selecting *File* -> *New*, and either s
 
 **Note:** If we are to create our own template, when saving the workbook save it as an *Excel Template*. This option can be found when selecting *Save As* -> *Browse* -> *Save as type*.
 
+# Section II
+
+## Working with an Excel List
+
+When we have a table of data, Excel treats the first row as headings when any kind of formatting has been applied to it. For instance, making it bold, a different colour or altering the font style. Having the first row as headers is useful when performing actions like sorting, filtering, pivot tables and calculations. It is imperative to ensure there are no missing rows or columns, as a missing row or column will seperate the dataset into two. When performing Excel operations, only the first part of the dataset will therefore be impacted, giving us incorrect findings.
+
