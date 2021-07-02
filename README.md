@@ -114,33 +114,33 @@ For *SmartArt*, we go onto the *Insert* tab and click on the *Illustrations* dro
 
 ## Creating Charts
 
-To produce charts, we highlight the desired data we wish to chart, select the Insert tab and go onto the Charts category. After we have selected the most fitting chart, it will be produced in the worksheet. Selecting the chart will result in two new tabs being produced, they are the Chart Design and Format tab. These tabs are used to refine the current visual to our specific requirements.
+To produce charts we highlight the desired data we wish to chart, select the *Insert* tab and go onto the *Charts* category. After we have selected our desired chart, it will be produced in the worksheet. Selecting the chart will result in two new tabs being produced, they are the *Chart Design* and *Format* tab. These tabs are used to refine the current visual to our specific requirements.
 
-**Note:** If we wish to alter the data selected by the chart, we select the chart, go onto the Chart Design tab and select Select Data in the Data category. If we unselect data from the menu or manually alter the selected data using CTRL, the axis may still show the names of the previous headings, despite there being no data. To remove this we right click the axis, select Format Axis and under Axis Type select Text axis. This will remove any headings where data has been unselected from.
+**Note:** If we wish to alter the data selected by the chart, we select the chart, go onto the *Chart Design* tab and select *Select Data* in the *Data* section. If we unselect data from the menu or manually alter the selected data using *CTRL*, the axis may still show the names of the previous headings, despite there being no data. To remove this we right click the axis, select *Format Axis* and under *Axis Type* select *Text* axis. This will remove any headings where data has been unselected from.
 
-The chart(s) we have produced can also be sent/moved to another worksheet. This is done by selecting the chart, going onto the Chart Design tab and selecting Move Chart in the Location category. This is a great way of clearly displaying a chart on full screen and not cluttering a worksheet too much.
+The chart(s) we have produced can also be sent/moved to another worksheet. This is performed by selecting the chart, going onto the *Chart Design* tab and selecting *Move Chart* in the *Location* category. This is a great way of clearly displaying a chart on full screen and not cluttering a worksheet too much.
 
 ## Printing an Excel Worksheet
 
-To print an Excel worksheet, select the File tab and go onto Print. The options here will be useful when printing in the best possible format using the settings.
+To print an Excel worksheet, select the *File* tab and go onto *Print*. The options here will be useful when printing in the best possible format using the settings.
 
-In the print settings, if we alternate from Landscape to Portrait we will notice horizontal and vertical dotted lines. These lines represent page breaks that coincide with the page sizes. Therefore, any visualisation or data that crosses this line will be split up and printed onto different pages. 
+In the print settings, if we alternate from Landscape to Portrait we will notice horizontal and vertical dotted lines. These lines represent page breaks that coincide with the page sizes. Therefore, any visualisation or data that crosses this line will be split up and printed onto different pages.
 
 We can use the scaling setting to enlarge certain data or visualisations for clarity and neatness. When scaled, the horizontal and vertical dotted page break lines will also correspond by increasing or decreasing the space between them.
 
 Another option we can utilise is the margins. Decreasing margins may allow more space for additional visuals to be included per page.
 
-To have a birds eye view of the page breaks i.e. how the visuals look per page, we can select the View tab and in the Workbooks Views we select Page Layout.
+To have a birds eye view of the page breaks i.e. how the visuals look per page, we can select the *View* tab and in the *Workbooks Views* we select *Page Layout*.
 
-**Note:** Inside the Page Layout view, we can work with the Header and Footer of the Excel document. If the Header and Footer is not visible, double click the top of the page and it will appear. When a cell of the Header or Footer is selected, a tab called Header & Footer will appear with options such as page numbers, file paths, dates and pictures which can be used to paste as a company logo.
+**Note:** Inside the *Page Layout* view, we can work with the *Header* and *Footer* of the Excel document. If the *Header* and *Footer* is not visible, double click the top of the page and it will appear. When a cell of the *Header* or *Footer* is selected, a tab called *Header & Footer* will appear with options such as *Page Numbers, File Paths, Dates* and *Pictures* which can be used to paste a company logo for instance.
 
-In the Page Layout tab within the Page Setup category, we have an option called Print Area. Setting the print area will print out only that area of a worksheet. This can also be performed by highlighting the cells and selecting the Print Active Sheets options within the print settings.
+In the *Page Layout* tab within the *Page Setup* category, we have an option called *Print Area*. Setting the print area will print out only that area of a worksheet. This can also be performed by highlighting the cells and selecting the *Print Active Sheets* options within the print settings.
 
 ## Working with Excel Templates
 
-Templates allow us to reuse structures (tables, charts, formulas .. etc) which enables us to efficiently perform preset or standardised tasks. A realistic application of this is sending across reports or dashboards to clients or within the company, which involves updating periodical reports with new data. In many companies for a data analyst, this is considered standard practice.
+Templates allow us to reuse structures (tables, charts, formulas .. etc) which enables us to efficiently perform preset or standardised tasks. A realistic application of this is sending across reports or dashboards to clients or within the company, which involves updating periodical reports with new data. For a data analyst, this is considered standard practice in many companies across industries.
 
-Excel standard templates can be found by selecting *File* -> *New*, and either selecting from the templates presented or searching from the search bar. Once selected, we simply click on the create button.
+Excel standard templates can be found by selecting *File* -> *New*, and either selecting from the templates presented or searching from the search bar. Once selected, we simply click on the *Create* button.
 
 **Note:** If we are to create our own template, when saving the workbook save it as an *Excel Template*. This option can be found when selecting *Save As* -> *Browse* -> *Save as type*.
 
