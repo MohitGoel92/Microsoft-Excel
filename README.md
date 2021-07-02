@@ -78,9 +78,9 @@ CTRL + SHIFT + + (add the row/column)
 CTRL + - (remove the row/column)
 ```
 
-To make a column or row the appropriate size, we can double click between the two letters or numbers where the spacing issue lies. In addition, we can click the triangle at the top-left corner of the worksheet which will highlight the whole worksheet, and double click between any two numbers or alphabets. This will ensure appropriate spacing between all the rows and/or columns across the whole worksheet. Similarly, we can make all the columns or rows the same size by selecting the triangle at the top-left of the worksheet and manually altering the size of the column or row. 
+To make a column or row the appropriate size, we can double click between the two letters (columns) or numbers (rows) where the spacing issue lies, or drag until appropriate. In addition, we can click the triangle at the top-left corner of the worksheet which will highlight the whole worksheet, and double click between any two numbers (rows) or letters (columns). This will ensure appropriate spacing between all the rows and/or columns across the whole worksheet. Similarly, we can make all the columns or rows the same size by selecting the triangle at the top-left of the worksheet and manually altering the size of the columns or rows. 
 
-We can also hide a column(s) or row(s) by highlighting them, right clicking and selecting hide in the menu. Equally, we can highlight the columns/rows, right click and select unhide.
+We can also hide a column(s) or row(s) by highlighting them, right clicking and selecting hide in the menu. To unhide we highlight the columns/rows, right click and select unhide.
 
 To rename or delete a worksheet, simply right click the sheet tab at the bottom and select rename/delete. Alternatively, if we wish to rename the sheet we can double click the sheet name and edit.
 
@@ -92,25 +92,25 @@ To reorder the sheets, we simple drag and drop the sheet to the place we desire.
 
 ### Font Formatting and Themes
 
-In the Home tab we see a category called Font. Here we can change the Font Theme, Colour, Size, Bold, Italic, Underline, add a border around a cell(s) ... etc. We are also able to change the theme of the workbook entirely. This is achieved by selecting the Page Layout tab and selecting Themes, Colours, Fonts or Effects from the Themes category.
+In the *Home* tab we see a category called *Font*. Here we can change the *Font Theme, Colour, Size, Bold, Italic, Underline*, add a border around a cell(s) ... etc. We are also able to change the theme of the workbook entirely. This is achieved by selecting the *Page Layout* tab and selecting *Themes, Colours, Fonts* or *Effects* from the *Themes* category.
 
-In the Home tab, we see a Number category which allows us to alter the number of decimal points, whether it's a percentage, comma's or currency. Other functions such as date and time conversions also exist here.
+In the *Home* tab, we see a *Number* category which allows us to alter the number of decimal points, percentage, comma's or currency. Other functions such as date and time conversions also exist here.
 
-The Format Painter is located in the Home tab in the Clipboard category. This allows us to copy the format of another cell and apply the same format to however many cells we desire. If we double click the Format Painter, we can keep clicking cells in order to replicate the same format; to turn it off we are required to either select Format Painter again or press the ESC key.
+The *Format Painter* is located in the *Home* tab in the *Clipboard* category. This allows us to copy the format of another cell and apply the same format to however many cells we desire. If we double click the *Format Painter*, we may continuously click cells in order to replicate the same format. To turn it off we are required to either select *Format Painter* again or press the *ESC* key.
 
-Cell styles is saved formatting which is reused for formatting whenever it is required in the future. This is located in the Home tab in the Styles category.
+*Cell Styles* is saved formatting which is reused for formatting whenever it is required in the future. This is located in the *Home* tab in the *Styles* category.
 
-**Note:** Conditional Formatting can also be performed using the option here. This is when cells are highlighted given a criteria, for example, showing cells red if the value is greater than £500. We can change these rules at any time by selecting Conditional Formatting and Managing Rules.
+**Note:** *Conditional Formatting* can also be performed using the option here. This is where cells are highlighted given a criteria, for example, showing cells red if the value is greater than £500. We can change these rules at any time by selecting *Conditional Formatting* and *Managing Rules*.
 
-To Merge cells or Wrap Text, we go to the Home tab and are able to select these options from the Alignment category.
+To *Merge* cells or *Wrap Text*, we go to the *Home* tab and are able to select these options from the *Alignment* category.
 
 ## Inserting Images and Shapes
 
-To insert an image, we go onto the Insert tab and click on the Illustrations drop down menu. To insert an image we select Pictures and to insert a shape we select Shapes.
+To insert an image, we go onto the *Insert* tab and click on the *Illustrations* drop down menu. To insert an image we select *Pictures* and to insert a shape we select *Shapes*.
 
-For SmartArt, we go onto the insert tab and click on the Illustrations drop down menu. To insert SmartArt we select SmartArt and explore the entire selection.
+For *SmartArt*, we go onto the *Insert* tab and click on the *Illustrations* drop down menu. To insert *SmartArt* we select *SmartArt* and explore the entire selection.
 
-**Note:** If we select the image or shape we have imported, a new tab called SmartArt Design or Shape Format reveals itself. This tab is used to modify our current image or shape.
+**Note:** If we select the image or shape we have imported, a new tab called *SmartArt Design* or *Shape Format* reveals itself. This tab is used to modify our current image or shape.
 
 ## Creating Charts
 
