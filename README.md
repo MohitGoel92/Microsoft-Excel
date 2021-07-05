@@ -158,3 +158,7 @@ When sorting a column from a data table, for instance, by last name, we simply s
 
 ### Sorting a List Using Multi-Level Sort
 
+A multi-level sort is required when ordering two or more columns that are within the same data table. This is achieved by selecting any cell within the table -> *Data* tab -> *Sort & Filter* section -> selecting the *Sort* option. We will be required to manually add the levels (columns names) of the criteria we wish to sort.
+
+**Note:** The first level we use to filter (sort by) will be the column that will be sorted independently. If another column is sorted after, the first column will act like a grouping. For example, if we filter last name and then first name, the last names will be sorted but the first names will only correspond to the last names. Therefore the first names being grouped by the last names which will be sorted.
+
