@@ -175,3 +175,6 @@ The Autofilter Tool is useful when we are required to select only a proportion o
 ```
 CTRL + SHIFT + L
 ```
+
+### Creating Subtotals in a List
+
