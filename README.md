@@ -148,5 +148,13 @@ Excel standard templates can be found by selecting *File* -> *New*, and either s
 
 ## Working with an Excel List
 
+**List:** A list is a rectangular range of cells on a worksheet. It has one or more adjacent columns and two or more rows.
+
 When we have a table of data, Excel treats the first row as headings when any kind of formatting has been applied to it. For instance, making it bold, a different colour or altering the font style. Having the first row as headers is useful when performing actions like sorting, filtering, pivot tables and calculations. It is imperative to ensure there are no missing rows or columns, as a missing row or column will seperate the dataset into two. When performing Excel operations, only the first part of the dataset will therefore be impacted, giving us incorrect findings.
+
+### Sorting a List Using Single-Level Sort
+
+When sorting a column from a data table, for instance, by last name, we simply select any cell within that column, select the *Data* tab and use the first controls from the *Sort & Filter* section.
+
+### Sorting a List Using Multi-Level Sort
 
