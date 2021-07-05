@@ -84,9 +84,9 @@ We can also hide a column(s) or row(s) by highlighting them, right clicking and 
 
 To rename or delete a worksheet, simply right click the sheet tab at the bottom and select rename/delete. Alternatively, if we wish to rename the sheet we can double click the sheet name and edit.
 
-**Note:** When you delete a worksheet in Excel, you cannot undue this step. In the event a worksheet has been regrettably deleted, we can close Excel without saving to prevent that worksheet being deleted, however, this will result in losing all the changes we have made after the latest save.
+**Note:** When you delete a worksheet in Excel, you cannot undo this step. In the event a worksheet has been regrettably deleted, we can close Excel without saving to prevent that worksheet being deleted, however, this will result in losing all the changes we have made after the latest save.
 
-To reorder the sheets, we simple drag and drop the sheet to the place we desire. And if we wish to copy a sheet, we simply hold CTRL, select the sheet and drag it to the right and drop. In addition, if we wish to copy or move a sheet from our current workbook to another workbook, we simply right click the worksheet, select move or copy and send it to either an existing workbook or create a new workbook there and then.
+To reorder the sheets, we simply drag and drop the sheet to the place we desire. And if we wish to copy a sheet, we simply hold CTRL, select the sheet and drag it to the right and drop. In addition, if we wish to copy or move a sheet from our current workbook to another workbook, we simply right click the worksheet, select move or copy and send it to either an existing workbook or create a new workbook there and then.
 
 ## Formatting Data in an Excel Worksheet
 
@@ -94,7 +94,7 @@ To reorder the sheets, we simple drag and drop the sheet to the place we desire.
 
 In the *Home* tab we see a category called *Font*. Here we can change the *Font Theme, Colour, Size, Bold, Italic, Underline*, add a border around a cell(s) ... etc. We are also able to change the theme of the workbook entirely. This is achieved by selecting the *Page Layout* tab and selecting *Themes, Colours, Fonts* or *Effects* from the *Themes* category.
 
-In the *Home* tab, we see a *Number* category which allows us to alter the number of decimal points, percentage, comma's or currency. Other functions such as date and time conversions also exist here.
+In the *Home* tab, we see a *Number* category which allows us to alter the number of decimal points, percentage, commas or currency. Other functions such as date and time conversions also exist here.
 
 The *Format Painter* is located in the *Home* tab in the *Clipboard* category. This allows us to copy the format of another cell and apply the same format to however many cells we desire. If we double click the *Format Painter*, we may continuously click cells in order to replicate the same format. To turn it off we are required to either select *Format Painter* again or press the *ESC* key.
 
@@ -150,7 +150,7 @@ Excel standard templates can be found by selecting *File* -> *New*, and either s
 
 **List:** A list is a rectangular range of cells on a worksheet. It has one or more adjacent columns and two or more rows.
 
-When we have a table of data, Excel treats the first row as headings when any kind of formatting has been applied to it. For instance, making it bold, a different colour or altering the font style. Having the first row as headers is useful when performing actions like sorting, filtering, pivot tables and calculations. It is imperative to ensure there are no missing rows or columns, as a missing row or column will seperate the dataset into two. When performing Excel operations, only the first part of the dataset will therefore be impacted, giving us incorrect findings.
+When we have a table of data, Excel treats the first row as headings when any kind of formatting has been applied to it. For instance, making it bold, a different colour or altering the font style. Having the first row as headers is useful when performing actions like sorting, filtering, pivot tables and calculations. It is imperative to ensure there are no missing rows or columns, as a missing row or column will separate the dataset into two. When performing Excel operations, only the first part of the dataset will therefore be impacted, giving us incorrect findings.
 
 ### Sorting a List Using Single-Level Sort
 
@@ -160,5 +160,11 @@ When sorting a column from a data table, for instance, by last name, we simply s
 
 A multi-level sort is required when ordering two or more columns that are within the same data table. This is achieved by selecting any cell within the table -> *Data* tab -> *Sort & Filter* section -> selecting the *Sort* option. We will be required to manually add the levels (columns names) of the criteria we wish to sort.
 
-**Note:** The first level we use to filter (sort by) will be the column that will be sorted independently. If another column is sorted after, the first column will act like a grouping. For example, if we filter last name and then first name, the last names will be sorted but the first names will only correspond to the last names. Therefore the first names being grouped by the last names which will be sorted.
+**Note:** The first level we use to filter (sort by) will be the column that will be sorted independently. If another column is sorted after, the first column will act like a grouping. For example, if we filter last name and then first name, the last names will be sorted but the first names will only correspond to the last names. Therefore the first names are grouped by the last names which will be sorted.
+
+### Using Custom Sorts in an Excel List
+
+Custom sorts are highly useful in situations where we are required to order our list using a specific criteria. For example, if we have the month names in our list and we wish to order them, alphabetically this will yield April, August, February ... etc. However, this is not what we desire as we wish to acquire a list with the months ordered by date. Therefore, selecting a cell in the data table -> *Data* tab -> *Sort & Filter* section -> selecting the *Sort* option and ordering using a *Custom List* will give us the option of ordering by months by timeline.
+
+### Filtering an Excel List Using the AutoFilter Tool
 
