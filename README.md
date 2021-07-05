@@ -168,3 +168,10 @@ Custom sorts are highly useful in situations where we are required to order our 
 
 ### Filtering an Excel List Using the AutoFilter Tool
 
+The Autofilter Tool is useful when we are required to select only a proportion of the data. For instance, if we wish to observe data from January and July only, the Autofilter will come in handy here. To use the Autofilter, select a cell in the data table -> *Data* tab -> *Sort & Filter* section -> select the *Filter* option. We now notice that the headings of the data table now have a downward pointing arrow which will allow us to select the desired data.
+
+**Note:** The keyboard shortcut for this is
+
+```
+CTRL + SHIFT + L
+```
