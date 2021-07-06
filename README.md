@@ -178,3 +178,23 @@ CTRL + SHIFT + L
 
 ### Creating Subtotals in a List
 
+With a list of products, we may wish to get the subtotals for our analysis. The manual way of doing this would be to order the products, create a new row between each group of products and summing up the above; this being highly tedious and impractical. The efficient way of doing this would be to order the column we wish to subtotal, then use the *Subtotal* function which is found by selecting the *Data* tab -> *Outline* section -> *Subtotal*.
+
+**Note:** This tool gives us bars at the left of the worksheet to alter the granularity of our view. We may collapse certain or all groups for easy analysis which is a great tool for reporting.
+
+### Format a List as a Table
+
+Formatting a list as a table will allow us to create a certain format for our data table which will remain consistent throughout any table operations we perform. In addition, we will have options such as having a filter button and a totals row. This can be performed by selecting the *Home* tab -> *Styles* section -> *Format as Table* where we are able to pick whichever style we prefer. When selecting the table, we observe a new tab called *Table Design*. In the *Table Style Options* section, we can add a *Total Row*, which will sum up the above, regardless of whether there is filter.
+
+**Note:** This approach is always better than any manual formatting or totalling as table operations will yield undesirable results.
+
+### Using Conditional Formatting to Find and Remove Duplicates
+
+To highlight the duplicates in a list, we simply highlight the column we wish to highlight the duplicates of -> select the *Home* tab -> select *Conditional Formatting* in the *Styles* section -> *Highlight Cells Rules* -> *Duplicate Values ...*. This will highlight all the duplicates we have.
+
+To remove the duplicates, we have two options, we can either:
+
+- Select the *Data* tab -> *Data Tools* section -> *Remove Duplicates* option, or, if we have set our list to be formatted as a table
+- Select the *Table Design* tab -> *Tools* section -> *Remove Duplicates* option.
+
+**Note:** When removing duplicates, it is imperative to ensure that we choose a primary key of the table. For example, when searching for duplicates we should search for an ID number, and not employee names as it is possible for two people in a company to have the same first and second name.
