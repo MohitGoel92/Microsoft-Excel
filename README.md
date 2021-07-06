@@ -39,7 +39,7 @@ There are two types of cell references: relative and absolute. Relative and abso
 ### Things to Remember
 
 - The standard way of starting an Excel calculation is with the equals (=) sign.
-- Any reference to a specific cell must by referenced by the column first and then the row. For example, cell A1 (column = A and row = 1).
+- Any reference to a specific cell must be referenced by the column first and then the row. For example, cell A1 (column = A and row = 1).
 - An absolute cell reference will not change if a formula is copied to another cell in the worksheet.
 - In order to make a specific cell absolute, we add a dollar sign ($) before the column and/or the row reference. For example, if we wish to make the cell A1 absolute we use $A$1.
 
@@ -69,7 +69,7 @@ ALT + =
 
 ## Modifying an Excel Worksheet
 
-We can move the entire data table by highlighting the area which contains the data, placing the cursor on the edge of the highlighted area and moveing the data to the new desired location. This can also be achieved by adding/removing columns/rows in the worksheet or using cut/copy and paste. To insert rows/columns we can either go onto the *Home* tab and use the functions under the Cells category, or use the keyboard shortcuts:
+We can move the entire data table by highlighting the area which contains the data, placing the cursor on the edge of the highlighted area and moving the data to the new desired location. This can also be achieved by adding/removing columns/rows in the worksheet or using cut/copy and paste. To insert rows/columns we can either go onto the *Home* tab and use the functions under the Cells category, or use the keyboard shortcuts:
 
 ```
 SHIFT + SPACE (highlight row)
@@ -184,7 +184,7 @@ With a list of products, we may wish to get the subtotals for our analysis. The 
 
 ### Format a List as a Table
 
-Formatting a list as a table will allow us to create a certain format for our data table which will remain consistent throughout any table operations we perform. In addition, we will have options such as having a filter button and a totals row. This can be performed by selecting the *Home* tab -> *Styles* section -> *Format as Table* where we are able to pick whichever style we prefer. When selecting the table, we observe a new tab called *Table Design*. In the *Table Style Options* section, we can add a *Total Row*, which will sum up the above, regardless of whether there is filter.
+Formatting a list as a table will allow us to create a certain format for our data table which will remain consistent throughout any table operations we perform. In addition, we will have options such as having a filter button and a totals row. This can be performed by selecting the *Home* tab -> *Styles* section -> *Format as Table* where we are able to pick whichever style we prefer. When selecting the table, we observe a new tab called *Table Design*. In the *Table Style Options* section, we can add a *Total Row*, which will sum up the above, regardless of whether there is a filter.
 
 **Note:** This approach is always better than any manual formatting or totalling as table operations will yield undesirable results.
 
@@ -198,3 +198,23 @@ To remove the duplicates, we have two options, we can either:
 - Select the *Table Design* tab -> *Tools* section -> *Remove Duplicates* option.
 
 **Note:** When removing duplicates, it is imperative to ensure that we choose a primary key of the table. For example, when searching for duplicates we should search for an ID number, and not employee names as it is possible for two people in a company to have the same first and second name.
+
+## Excel List Functions
+
+The list functions we will be discussing are:
+
+- DSUM()
+- DAVERAGE()
+- DCOUNT()
+- SUBTOTAL()
+
+**DSUM() with a Single Criteria:**
+
+This function is used when wanting to find the total for a certain group, in a list that contains many groups. This function will require three arguments, they are the *Database*, *Field* and *Criteria*.
+
+**Note:** When typing a formula into a cell, guidance is given by pressing the function button (*fx*) with regards to the arguments required.
+
+**DSUM() with OR Criteria:**
+
+The OR criteria takes effect when we select at least 2 categories we wish to combine the total(s) for. This is achieved by selecting a range of categories in the third argument that is called *Criteria*.
+
