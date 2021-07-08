@@ -234,3 +234,5 @@ DCOUNT() works exactly the same way as the above and provides the count per cate
 
 **SUBTOTAL():**
 
+SUBTOTAL() takes at least two arguments, they are the *Function_num* (the number 1 to 11 that specifies the summary function for the subtotal), and the cell reference. The numbers 1 to 11 specify a function such as DSUM(), DCOUNT(), DAVERAGE() ... etc. We use the SUBTOTAL() in situations where the user of the worksheet may filter the rows of the table. As the number of rows displayed changes, the SUBTOTAL() summary function also adapts to only encorporate the rows displayed. The other functions such as DSUM() ... etc will not adapt and will show their results for the whole table.
+
