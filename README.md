@@ -230,3 +230,7 @@ DSUM() and DAVERAGE() work exactly the same way, with the only difference being 
 
 **Note:** With DCOUNT() we have two types, DCOUNT() and DCOUNTA(). The only difference between the two is that DCOUNTA() will take all types of cells into consideration, regardless whether they are a number or a string, however, DCOUNT() will only take numeric cells into consideration.
 
+DCOUNT() works exactly the same way as the above and provides the count per category.
+
+**SUBTOTAL():**
+
