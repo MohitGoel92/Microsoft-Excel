@@ -218,3 +218,15 @@ This function is used when wanting to find the total for a certain group, in a l
 
 The OR criteria takes effect when we select at least 2 categories we wish to combine the total(s) for. This is achieved by selecting a range of categories in the third argument that is called *Criteria*.
 
+**DSUM() with AND Criteria:**
+
+The AND criteria takes effect when we select at least one category and one subcategory. This is achieved by selecting two cells that are horizontally next to each other, along with their headings in the third argument of the formula.
+
+**DAVERAGE():**
+
+DSUM() and DAVERAGE() work exactly the same way, with the only difference being DAVERAGE() provides an average per category instead of the total summation of that category.
+
+**DCOUNT():**
+
+**Note:** With DCOUNT() we have two types, DCOUNT() and DCOUNTA(). The only difference between the two is that DCOUNTA() will take all types of cells into consideration, regardless whether they are a number or a string, however, DCOUNT() will only take numeric cells into consideration.
+
