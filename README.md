@@ -258,4 +258,18 @@ When a value is disallowed and excel gives a validation error, the error may con
 
 ### Dynamic Formulas by Using Data Validation Techniques
 
-If we have an interactive table where we input information into a cell with corresponding values, we may use data validation to ensure the user of the workbook is aware of any typos or non-existing values if one should be inputted. This is exactly the same as creating an excel data validation list but instead of manually typing in a list of options, we refer the list of options as a range of cell that contain the options for the list. To do this, select the cell(s) we wish to apply the rule for -> Go onto the *Data* tab -> *Data Tools* section -> *Data Validation* button -> Input our preferences. This will give the user a drop down to select from.
+If we have an interactive table where we input information into a cell with corresponding values, we may use data validation to ensure the user of the workbook is aware of any typos or non-existing values if one should be inputted. This is exactly the same as creating an excel data validation list but instead of manually typing in a list of options, we refer the list of options as a range of cells that contain the options for the list. To do this, select the cell(s) we wish to apply the rule for -> Go onto the *Data* tab -> *Data Tools* section -> *Data Validation* button -> Input our preferences. This will give the user a drop down to select from.
+
+## Importing and Exporting Data
+
+In this section, we will be learning how to import data from an external source. The external source may be a small text file or a large Microsoft Access Database.
+
+### Importing Data from Text Files
+
+To import data into excel from a text file, we simply select the *Data* tab -> *Get & Transform Data* section -> Select the *Get Data* button -> *From File* -> *From Text/CSV* -> Select the desired text file.
+
+**Note:** Before we load the data onto our worksheet, we have the option to transform our data.
+
+### Importing Data from a Database
+
+We will be importing data from a Microsoft Access Database. To do this, we simply select the *Data* tab -> *Get & Transform Data* section -> Select the *Get Data* button -> *From Database* -> *From Microsoft Access Database* -> Select the desired file.
