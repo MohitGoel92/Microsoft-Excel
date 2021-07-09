@@ -244,3 +244,18 @@ In Excel, the data validation feature helps us control what can be entered in ou
 - Restrict entries, such as a date range or whole numbers only
 - Create custom rules for what can be entered. This ensures that the data we receive is usable for our analysis.
 
+### Creating an Excel Data Validation List
+
+This will allow us to have complete control over what data may be inputted into the workbook so when the data is returned to us, we can continue with our analysis smoothly. To do this, select the cells we wish to apply the rule for -> Go onto the *Data* tab -> *Data Tools* section -> *Data Validation* button -> Input our preferences. This will give the user a drop down to select from.
+
+### Decimal Data Validation
+
+This data validation specifies a numeric range within a column. To do this, similar to the above we select the cells we wish to apply the rule for -> Go onto the *Data* tab -> *Data Tools* section -> *Data Validation* button -> *Settings* -> *Allow: Decimals* -> Input our preferences.
+
+### Adding a Custom Excel Data Validation Error
+
+When a value is disallowed and excel gives a validation error, the error may confuse the user of the worksheet. This therefore implies we must tell excel to give out a custom message to avoid confusion. To do this, similar to the above we select the cells we wish to customise the error message for -> Go onto the *Data* tab -> *Data Tools* section -> *Data Validation* button -> *Error alert* -> Input our preferences.
+
+### Dynamic Formulas by Using Data Validation Techniques
+
+If we have an interactive table where we input information into a cell with corresponding values, we may use data validation to ensure the user of the workbook is aware of any typos or non-existing values if one should be inputted. This is exactly the same as creating an excel data validation list but instead of manually typing in a list of options, we refer the list of options as a range of cell that contain the options for the list. To do this, select the cell(s) we wish to apply the rule for -> Go onto the *Data* tab -> *Data Tools* section -> *Data Validation* button -> Input our preferences. This will give the user a drop down to select from.
