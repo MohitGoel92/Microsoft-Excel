@@ -273,3 +273,9 @@ To import data into excel from a text file, we simply select the *Data* tab -> *
 ### Importing Data from a Database
 
 We will be importing data from a Microsoft Access Database. To do this, we simply select the *Data* tab -> *Get & Transform Data* section -> Select the *Get Data* button -> *From Database* -> *From Microsoft Access Database* -> Select the desired file.
+
+### Exporting Data to a Text File
+
+There are several reasons why one may wish to export their excel worksheet to a text file. For instance, if we wanted to move our data into another system such as a database or another file application which may not communicate with Excel. In addition, text files have a smaller file size which is useful for email as there is no clutter from Excel such as formulas or formatting. A lot of the time databases just require raw data, without any of the Excel influence.
+
+To do this we have two options, we either select *File* -> *Export* -> Choose file type or *File* -> *Save As* -> Change file type.
