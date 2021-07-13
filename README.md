@@ -279,3 +279,13 @@ We will be importing data from a Microsoft Access Database. To do this, we simpl
 There are several reasons why one may wish to export their excel worksheet to a text file. For instance, if we wanted to move our data into another system such as a database or another file application which may not communicate with Excel. In addition, text files have a smaller file size which is useful for email as there is no clutter from Excel such as formulas or formatting. A lot of the time databases just require raw data, without any of the Excel influence.
 
 To do this we have two options, we either select *File* -> *Export* -> Choose file type or *File* -> *Save As* -> Change file type.
+
+## Excel PivotTables
+
+A pivot table is a table of grouped values that aggregates the individual items of a more extensive table (such as from a database, spreadsheet, or business intelligence program) within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values.
+
+Pivot tables are a technique in data processing. They arrange and rearrange (or "pivot") statistics in order to draw attention to useful information. This leads to finding figures and facts quickly making them integral to data analysis. This ultimately leads to helping businesses or individuals make educated decisions.
+
+### Creating a PivotTable
+
+When creating a pivot table, we are required to select the data on the worksheet.
