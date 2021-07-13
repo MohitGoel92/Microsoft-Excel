@@ -288,4 +288,15 @@ Pivot tables are a technique in data processing. They arrange and rearrange (or 
 
 ### Creating a PivotTable
 
-When creating a pivot table, we are required to select the data on the worksheet.
+When creating a pivot table, we are required to select the data on the worksheet before pivoting. However, if there are any changes to the original table, this will not be picked up by the pivot table. Therefore, to avoid this we should format the data as a table and in the *Table Design* tab, name the table. This table name will be used when telling excel which data we wish to pivot.
+
+To pivot the table, click on any cell within the table -> *Insert* tab -> *Tables* section -> Select *PivotTable* -> Enter table name and desired location of the pivot table.
+
+### Grouping Data
+
+Sometimes, we will want to group certain categories (row labels), for instance, grouping months into quarters. To do this within the pivot table, we select the cells we wish to group -> *PivotTable Analyze* tab -> *Group* section -> Select *Group Selection*. We will notice that the other rows now have their own category each. To group the other cells, simply highlight the next group and follow the same procedure.
+
+### Data Formatting
+
+Data formatting is crucial as it gives clarity due to the ease of understanding. For instance if we are observing sales data, the numbers should be a currency and perhaps whole numbers, instead of random decimal numbers everywhere in the data table. To perform data formatting in the pivot table, select the field name we wish to format -> *Value Field Settings ...* -> *Number Format* -> Select *Category*, *Symbol* and *Decimal places*.
+
