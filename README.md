@@ -306,3 +306,14 @@ Modifying calculations within our pivot table can provide useful insights to the
 
 **Note:** Double clicking a cell in a pivot table will open a seperate worksheet that contains the relevant data for that value. This is like a drill down function for that value.
 
+### Creating PivotCharts
+
+Pivot charts are very powerful as they are quick and easy to alter and provide powerful insights into the data. Pivot charts are quick to produce after a pivot table has been made. This is performed by selecting any cell within the pivot table -> *PivotTable Analyze* tab -> *Tools* section -> *PivotChart* option.
+
+**Note:** Any changes to the pivot table will be reflected by the pivot chart.
+
+**Note:** Dragging a field into the filter section will also add a filter onto the pivot chart. This enables us to chart data with a specific criteria and analyse data further.
+
+### Slicers
+
+Slicers are visual filters. Using a slicer, we may filter the data (or pivot table, pivot chart) by selecting the type of data we desire. For example, let's say we're looking at a dashboard which contains multiple years and regions. If we wanted to select a particular region(s) or year(s), we simply look at the controls to see what options are available and select at least one of them. This will filter the data to our specific requirements.
