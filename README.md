@@ -300,3 +300,9 @@ Sometimes, we will want to group certain categories (row labels), for instance, 
 
 Data formatting is crucial as it gives clarity due to the ease of understanding. For instance if we are observing sales data, the numbers should be a currency and perhaps whole numbers, instead of random decimal numbers everywhere in the data table. To perform data formatting in the pivot table, select the field name we wish to format -> *Value Field Settings ...* -> *Number Format* -> Select *Category*, *Symbol* and *Decimal places*.
 
+### Modifying PivotTable Calculations
+
+Modifying calculations within our pivot table can provide useful insights to the viewer of the workbook. For instance, alongside the total sum of sales per month we may provide the sales difference as a % from last month. This can be achieved by selecting the field -> *Value Field Settings ...* -> *Show values as* tab -> Select desired options.
+
+**Note:** Double clicking a cell in a pivot table will open a seperate worksheet that contains the relevant data for that value. This is like a drill down function for that value.
+
