@@ -336,3 +336,8 @@ To start creating a model with power pivot, we simple click a cell within a data
 
 **Note:** In the power pivot window we observe a section called *Get External Data*. It is here where we can combine data from multiple sources in order to produce our desired model.
 
+### PowerPivot Data Model Relationships
+
+To create relationships between tables (two data tabs) within our power pivot view, we may either select *Diagram View* from the *View* tab and then drag and drop the primary key of the parent table onto the corresponding primary key of the child table, or we can right click the heading of the primary key of the parent table in the normal *Data View*, select *Create Relationship* and manually select the two tables we wish to create a relationship between.
+
+**Note:** This is similar to Power BI, see: (https://github.com/MohitGoel92/Power-BI)
