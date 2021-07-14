@@ -340,4 +340,13 @@ To start creating a model with power pivot, we simple click a cell within a data
 
 To create relationships between tables (two data tabs) within our power pivot view, we may either select *Diagram View* from the *View* tab and then drag and drop the primary key of the parent table onto the corresponding primary key of the child table, or we can right click the heading of the primary key of the parent table in the normal *Data View*, select *Create Relationship* and manually select the two tables we wish to create a relationship between.
 
-**Note:** This is similar to Power BI, see: (https://github.com/MohitGoel92/Power-BI)
+**Note:** This is similar to Power BI, see: https://github.com/MohitGoel92/Power-BI
+
+### Creating PivotTables based on Data Models
+
+To perform this, select a cell within the table of the power pivot view and select the *PivotTable* option in the *Home* tab. This will open a pivot table within our original worksheet from which the power pivot window stemmed from. However, upon close observation we see that our pivot table fields are actually tables that contain all the columns of that table. This now allows us to combine fields (columns) from all the tables that share the same primary key from the parent table.
+
+### PowerPivot KPIs
+
+To manage or edit the data model, simply go onto the *Power Pivot* tab of the excel worksheet and select *Manage*; this will bring us to the power pivot window. In the *Home* tab under the *Calculations* section, we observe two options, *AutoSum* and *Create KPI*. Selecting a cell within a column will allow us to create a calculation at the bottom of that column. For example, we can calculate the total sum, average, count ... etc. Once this step has been completed, we are able to *Create KPI*. This option allows us to manually set how our data should be interpreted. For instance, if we are dealing with profit margin, a profit margin below 10% may be deemed bad (red zone), between 10%-30% reasonable (amber zone) and over 30% ideal (green zone). Once this has been set, we will notice a new field within our pivot table on our original worksheet that has the same name as our calculation. This can be dragged onto the pivot table, just like a normal field. This will now indicate where each row of the data stands in terms of its KPI.
+
