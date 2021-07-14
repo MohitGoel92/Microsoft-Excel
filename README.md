@@ -322,3 +322,11 @@ To add a slicer, click a cell within the pivot table/chart -> *Insert* tab -> *F
 
 ## PowerPivot Tools
 
+Power Pivot is an Excel add-in you can use to perform powerful data analysis and create sophisticated data models. With Power Pivot, you can combine large volumes of data from various sources, perform information analysis rapidly, and share insights easily.
+
+In both Excel and in Power Pivot, you can create a Data Model, a collection of tables with relationships. The data model you see in a workbook in Excel is the same data model you see in the Power Pivot window. Any data you import into Excel is available in Power Pivot, and vice versa.
+
+### Activating the PowerPivot AddIn
+
+The power pivot add-in can be enabled by selecting the *File* tab -> *Options* -> *Add-ins* -> *Manage:* -> *COM Add-ins* -> *Go* -> Tick *Microsoft Power Pivot for Excel* box. We will now see a new tab called Power Pivot in our excel workbook.
+
