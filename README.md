@@ -330,3 +330,9 @@ In both Excel and in Power Pivot, you can create a Data Model, a collection of t
 
 The power pivot add-in can be enabled by selecting the *File* tab -> *Options* -> *Add-ins* -> *Manage:* -> *COM Add-ins* -> *Go* -> Tick *Microsoft Power Pivot for Excel* box. We will now see a new tab called Power Pivot in our excel workbook.
 
+### Creating a Data Model with PowerPivot
+
+To start creating a model with power pivot, we simple click a cell within a data table -> Select the *PowerPivot* tab -> *Tables* section -> *Add to Data Model*. We observe a new window opening up with the power pivot. If we close this window and repeat the process with another data table within the workbook, we will notice two data tabs being present in the power pivot screen; these are two data tables that we can now combine in our power pivot model.
+
+**Note:** In the power pivot window we observe a section called *Get External Data*. It is here where we can combine data from multiple sources in order to produce our desired model.
+
