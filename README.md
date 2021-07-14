@@ -317,3 +317,8 @@ Pivot charts are very powerful as they are quick and easy to alter and provide p
 ### Slicers
 
 Slicers are visual filters. Using a slicer, we may filter the data (or pivot table, pivot chart) by selecting the type of data we desire. For example, let's say we're looking at a dashboard which contains multiple years and regions. If we wanted to select a particular region(s) or year(s), we simply look at the controls to see what options are available and select at least one of them. This will filter the data to our specific requirements.
+
+To add a slicer, click a cell within the pivot table/chart -> *Insert* tab -> *Filters* section -> *Slicer* option.
+
+## PowerPivot Tools
+
