@@ -362,3 +362,7 @@ In an excel sheet, we can hide columns or rows by highlighting them, right click
 
 **Note:** This can be performed on the same column each time with an additional column/row. This is useful if we desire to give the user of the worksheet the option to group the data once column at a time per click or numerous.
 
+### Printing Options for Large Data Sets
+
+When printing large datasets, we may encounter formatting issues such as the column headings not being present in following pages and columns being cut off the right side due to space shortages being printed midway through printing. This however is easily remedied by going onto the *Page Layout* tab -> *Page Setup* section -> *Print Titles* -> In the *Rows to repeat at the top* section we highlight the row with the column titles on the worksheet -> *Page Order* option -> Select *Over, then down*.
+
