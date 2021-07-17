@@ -350,3 +350,15 @@ To perform this, select a cell within the table of the power pivot view and sele
 
 To manage or edit the data model, simply go onto the *Power Pivot* tab of the excel worksheet and select *Manage*; this will bring us to the power pivot window. In the *Home* tab under the *Calculations* section, we observe two options, *AutoSum* and *Create KPI*. Selecting a cell within a column will allow us to create a calculation at the bottom of that column. For example, we can calculate the total sum, average, count ... etc. Once this step has been completed, we are able to *Create KPI*. This option allows us to manually set how our data should be interpreted. For instance, if we are dealing with profit margin, a profit margin below 10% may be deemed bad (red zone), between 10%-30% reasonable (amber zone) and over 30% ideal (green zone). Once this has been set, we will notice a new field within our pivot table on our original worksheet that has the same name as our calculation. This can be dragged onto the pivot table, just like a normal field. This will now indicate where each row of the data stands in terms of its KPI.
 
+## Working with Large Data Sets
+
+### Freeze Panes
+
+When working with data tables, we may need to scroll down the table but as we scroll, we may notice that the headings disappear. This results in us requiring to scroll up to remind us of what the column means. However, we can use *Freeze Panes* to lock a certain row(s) and/or column(s). To do this, we either select a cell, highlight a column(s) and/or row(s) -> *View* tab -> *Window* section -> *Freeze Panes* option -> *Freeze Panes*.
+
+### Grouping Data (Columns and/or Rows)
+
+In an excel sheet, we can hide columns or rows by highlighting them, right clicking and selecting hide; we can unhide them later. However, we can also set a function at the side of the worksheet which enables us to group the rows or columns by clicking a button for easy user functionality. To do this, we highlight the row(s) or column(s) -> *Data* tab -> *Outline* button -> *Group* -> *Group*.
+
+**Note:** This can be performed on the same column each time with an additional column/row. This is useful if we desire to give the user of the worksheet the option to group the data once column at a time per click or numerous.
+
