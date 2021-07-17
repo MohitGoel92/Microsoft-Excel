@@ -366,3 +366,22 @@ In an excel sheet, we can hide columns or rows by highlighting them, right click
 
 When printing large datasets, we may encounter formatting issues such as the column headings not being present in following pages and columns being cut off the right side due to space shortages being printed midway through printing. This however is easily remedied by going onto the *Page Layout* tab -> *Page Setup* section -> *Print Titles* -> In the *Rows to repeat at the top* section we highlight the row with the column titles on the worksheet -> *Page Order* option -> Select *Over, then down*.
 
+### Linking Worksheets (3D Formulas)
+
+These are also known as cubed formulas. A reference that refers to the same cell or range on multiple worksheets is called a 3D reference. Using 3D formulas allows us to calculate data throughout a workbook using multiple worksheets. Below is an example of how a 3D formula may look:
+
+```
+='2013'!B4+'2014'!B4+'2015'!B4
+```
+
+The above formula is summing up three cells *(B4)* from three different sheets *(2013, 2014, 2015)* onto a summary sheet.
+
+### Consolidating Data from Multiple Worksheets
+
+To summarise and report results from separate worksheets, we can consolidate data from each sheet into a master worksheet. The sheets can be in the same workbook as the master worksheet, or in other workbooks. When we consolidate data, we assemble data so that we can more easily update and aggregate as necessary.
+
+For example, if we have an expense worksheet for each of our regional offices, we might use consolidation to roll these figures into a master corporate expense worksheet. This master worksheet might also contain sales totals and averages, current inventory levels, and highest selling products for the entire enterprise.
+
+To do this, we click on a cell of an empty table we wish to populate from the top-left corner rightwards -> *Data* tab -> *Data Tools* section -> *Consolidate* -> Highlight a table we wish to include and select *Add* -> Repeat this process for all the tables we wish to add -> Tick the *Use labels in: Left column* box.
+
+**Note:** The *create links to source data* option once ticked will update the consolidated table whenever any changes occur in a linked table.
