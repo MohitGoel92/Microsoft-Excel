@@ -421,7 +421,7 @@ To edit or delete name ranges, we go onto the *Formulas* tab -> *Defined Names* 
 
 ### The IF() Function
 
-The *IF* function is one of the most popular functions in Excel, and it allows you to make logical comparisons between a value and what you expect. So an *IF* statement can have two results. The first result is if your comparison is *TRUE*, the second if your comparison is *FALSE*. An example of the *IF* function is given below:
+The *IF* function is one of the most popular functions in Excel, and it allows you to make logical comparisons between a value and what you expect. So a *IF* statement can have two results. The first result is if your comparison is *TRUE*, the second if your comparison is *FALSE*. An example of the *IF* function is given below:
 
 ```
 =IF(A1>B1,"Yes","No")
@@ -431,7 +431,7 @@ The above function will produce a "Yes" if the cell A1 is greater than B2, other
 
 ### The IF() Function with a Name Range
 
-In the above *IF* statment, if we drag the formula down the reference cell B1 will change to B2. If we wished to compare the A column to a number specifically located at cell B1, we must make the cell absolute by using dollar signs. The above formula will look like the below:
+In the above *IF* statement, if we drag the formula down the reference cell B1 will change to B2. If we wish to compare the A column to a number specifically located at cell B1, we must make the cell absolute by using dollar signs. The above formula will look like the below:
 
 ```
 =IF(A1>$B$1,"Yes","No")
