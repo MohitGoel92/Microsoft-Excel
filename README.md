@@ -388,3 +388,34 @@ To do this, we click on a cell of an empty table we wish to populate from the to
 
 ## Conditional Functions
 
+### Working with Name Ranges
+
+A named range is where one or more cells are grouped together and have been given a name. Using named ranges can make formulas easier to read and understand. They also provide simple navigation via the *Name Box*. For example, if we wanted to find the sum total of a range of cells, the formula may look like the below:
+
+```
+=SUM(C5:C9)
+```
+
+However, we may highlight the same range of cells but give them a name by writing a name in the top left *Name Box* within the *Home* tab. Finding the sum total may now look like the below:
+
+```
+=SUM(Name_of_cell_range)
+```
+
+**Note:** The name of the cell range cannot contain any spaces.
+
+**Advantages**
+
+- Giving a cell(s) a name provides more context/definition. For example, naming a range of cells Week_1 notifies the user of the worksheet that we are using data from week 1.
+- Name ranges can not only be used in all formulas, we can name large sets of data by a single name which makes formulas more readable as the user will have context.
+- All of the names of the named ranges are all saved within the name box. Therefore, regardless of which worksheet we are viewing, we can easily navigate to the named cell range by clicking on the drop down of the *Name Box* within the *Home* tab, and selecting the desired data we wish to view.
+- We are able to print just the named data range.
+
+**Disadvantages**
+
+- Name ranges are absolute formulas. Therefore, we cannot simply drag the formula across to, for instance, sum the columns to the right.
+
+### Editing Name Ranges
+
+To edit or delete name ranges, we go onto the *Formulas* tab -> *Defined Names* section -> Select *Name Manager* -> Select the name range and click *Edit*.
+
