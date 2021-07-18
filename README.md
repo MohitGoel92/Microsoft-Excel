@@ -385,3 +385,6 @@ For example, if we have an expense worksheet for each of our regional offices, w
 To do this, we click on a cell of an empty table we wish to populate from the top-left corner rightwards -> *Data* tab -> *Data Tools* section -> *Consolidate* -> Highlight a table we wish to include and select *Add* -> Repeat this process for all the tables we wish to add -> Tick the *Use labels in: Left column* box.
 
 **Note:** The *create links to source data* option once ticked will update the consolidated table whenever any changes occur in a linked table.
+
+## Conditional Functions
+
