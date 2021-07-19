@@ -443,3 +443,12 @@ As Name Range cell(s) is also an absolute cell, therefore, if the target value i
 =IF(A1>Target_KPI,"Yes","No")
 ```
 
+### Nesting Functions
+
+A nested function is tucked inside another Excel function as one of its arguments. Nesting functions let you return results you would have a hard time getting otherwise. Two examples of nested functions are given below, they are both producing the same result:
+
+```
+=AND(H5="Yes",B5>=8000,C5>=8000,D5>=8000,E5>=8000)
+=AND(H5="Yes",MIN(B5:E5)>=8000)
+```
+
