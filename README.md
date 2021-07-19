@@ -452,3 +452,25 @@ A nested function is tucked inside another Excel function as one of its argument
 =AND(H5="Yes",MIN(B5:E5)>=8000)
 ```
 
+### Nesting AND() Function within the IF() Function
+
+A nested function is tucked inside another Excel function as one of its arguments. Nesting functions let you return results you would have a hard time getting otherwise. When a function is nested inside another, the inner function is calculated first. Then that result is used as an argument for the outer function.
+
+Nesting an *AND* function within a *IF* function allows us to test multiple conditions. A function of this sort will look something like the below:
+
+```
+=IF(AND(H5="Yes",MIN(B5:E5)>=8000),"Bonus","No Bonus")
+```
+
+**Note:** Before the parenthesis (open bracket), we may select the *fx* button and the pop up will guide us to the appropriate arguments required.
+
+### COUNTIF() Function
+
+*COUNTIF* is an Excel function to count cells in a range that meet a single condition. *COUNTIF* can be used to count cells that contain dates, numbers, and text. For instance, a *COUNTIF* function may look like the below:
+
+```
+=COUNTIF(H5:H9,"Yes")
+```
+
+The above will produce a count of the cells that contain a "Yes".
+
