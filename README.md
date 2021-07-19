@@ -386,6 +386,8 @@ To do this, we click on a cell of an empty table we wish to populate from the to
 
 **Note:** The *create links to source data* option once ticked will update the consolidated table whenever any changes occur in a linked table.
 
+# Section III
+
 ## Conditional Functions
 
 ### Working with Name Ranges
@@ -421,7 +423,7 @@ To edit or delete name ranges, we go onto the *Formulas* tab -> *Defined Names* 
 
 ### The IF() Function
 
-The *IF* function is one of the most popular functions in Excel, and it allows you to make logical comparisons between a value and what you expect. So a *IF* statement can have two results. The first result is if your comparison is *TRUE*, the second if your comparison is *FALSE*. An example of the *IF* function is given below:
+The *IF* function is one of the most popular functions in Excel, and it allows you to make logical comparisons between a value and what you expect. So an *IF* statement can have two results. The first result is if your comparison is *TRUE*, the second if your comparison is *FALSE*. An example of the *IF* function is given below:
 
 ```
 =IF(A1>B1,"Yes","No")
@@ -456,7 +458,7 @@ A nested function is tucked inside another Excel function as one of its argument
 
 A nested function is tucked inside another Excel function as one of its arguments. Nesting functions let you return results you would have a hard time getting otherwise. When a function is nested inside another, the inner function is calculated first. Then that result is used as an argument for the outer function.
 
-Nesting an *AND* function within a *IF* function allows us to test multiple conditions. A function of this sort will look something like the below:
+Nesting an *AND* function within an *IF* function allows us to test multiple conditions. A function of this sort will look something like the below:
 
 ```
 =IF(AND(H5="Yes",MIN(B5:E5)>=8000),"Bonus","No Bonus")
@@ -488,3 +490,14 @@ Where column C is the column which contains a list of the different types of gro
 
 ### IFERROR() Function
 
+The *IFERROR* function is used to catch errors and return a more friendly result or message when an error is detected. When a formula returns a normal result, the *IFERROR* function returns that result. When a formula returns an error, *IFERROR* returns an alternative result. *IFERROR* is an elegant way to trap and manage errors. The *IFERROR* function is a modern alternative to the *ISERROR* function.
+
+Use the *IFERROR* function to trap and handle errors produced by other formulas or functions. *IFERROR* checks for the following errors: *#N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?*, or *#NULL!*.
+
+For instance, an *IFERROR* function may look like the below:
+
+```
+=IFERROR(VLOOKUP($B11,'Master Emp List'!$A$1:$I$38,3,FALSE),"EMP ID NOT FOUND")
+```
+
+In the above formula, if the *VLOOKUP* returns an error, instead of an error message it will return the message "EMP ID NOT FOUND". This makes the reasoning of the error clear to the user of the worksheet, therefore making it easier to remedy.
