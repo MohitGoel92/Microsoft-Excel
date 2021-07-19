@@ -474,3 +474,17 @@ Nesting an *AND* function within a *IF* function allows us to test multiple cond
 
 The above will produce a count of the cells that contain a "Yes".
 
+### SUMIF() Function
+
+The Excel *SUMIF* function returns the sum of the cells that meet a single condition. Criteria can be applied to dates, numbers, and text.
+
+For instance, a *SUMIF* function may look like the below:
+
+```
+=SUMIF(C:C,G5,E:E)
+```
+
+Where column C is the column which contains a list of the different types of groups, G5 contains the criteria we desire and column E contains the data we wish to sum (sales data).
+
+### IFERROR() Function
+
