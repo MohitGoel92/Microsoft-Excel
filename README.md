@@ -501,3 +501,18 @@ For instance, an *IFERROR* function may look like the below:
 ```
 
 In the above formula, if the *VLOOKUP* returns an error, instead of an error message it will return the message "EMP ID NOT FOUND". This makes the reasoning of the error clear to the user of the worksheet, therefore making it easier to remedy.
+
+## LOOKUP Functions
+
+The *LOOKUP* function performs an approximate match lookup in a one-column or one-row range, and returns the corresponding value from another one-column or one-row range. *LOOKUP*'s default behaviour makes it useful for solving certain problems in Excel.
+
+### VLOOKUP()
+
+*VLOOKUP* stands for 'Vertical Lookup'. It is a function that makes Excel search for a certain value in a column (the so called 'table array'), in order to return a value from a different column in the same row. A *VLOOKUP()* formula will take a similar form as the below:
+
+```
+=VLOOKUP($B3,'Master Emp List'!$A$1:$I$38,2,FALSE)
+```
+
+**Note:** The *VLOOKUP* has 4 arguments. The last argument is *FALSE* because, if we had *TRUE* instead, the formula will produce the closest match. However, to be precise in our work, we should not seek the closest match but the exact match or error.
+
