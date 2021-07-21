@@ -547,8 +547,10 @@ The value that will be displayed in the cell of which the formula exists, is the
 Combining *INDEX* and *MATCH* will result in a formula that takes the below shape, for ease of reading it is generic:
 
 ```
-=INDEX(Desired_column_from_desired_master_table, MATCH(Lookup_Value,Column_of_master_table_where_lookup_value_exists,0))
+=INDEX(Desired_column_from_desired_master_table, 
+       MATCH(Lookup_value_of_column, Column_of_master_table_where_lookup_value_exists, 0)
+       MATCH(Lookup_value_of_row_of_columns, Row_of_column_names_of_master_table, 0))
 ```
 
-**Note:** As we are looking up (indexing) a column and not a table with multiple columns, we are not required to input the third argument.
+**Note:** In the above formula, the first argument establishes the master data table, the second argument finds the correct row number and the third argument finds the correct column number. Therefore, although this formula may seem tedious, it is just a small extension of the original/basic *INDEX* function, with two nested *MATCH* functions.
 
