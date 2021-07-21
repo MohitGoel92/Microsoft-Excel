@@ -508,11 +508,47 @@ The *LOOKUP* function performs an approximate match lookup in a one-column or on
 
 ### VLOOKUP()
 
-*VLOOKUP* stands for 'Vertical Lookup'. It is a function that makes Excel search for a certain value in a column (the so called 'table array'), in order to return a value from a different column in the same row. A *VLOOKUP()* formula will take a similar form as the below:
+*VLOOKUP* stands for 'Vertical Lookup'. It is a function that makes Excel search for a certain value in a column (the so-called 'table array'), in order to return a value from a different column in the same row. A *VLOOKUP()* formula will take a similar form as the below:
 
 ```
 =VLOOKUP($B3,'Master Emp List'!$A$1:$I$38,2,FALSE)
 ```
 
-**Note:** The *VLOOKUP* has 4 arguments. The last argument is *FALSE* because, if we had *TRUE* instead, the formula will produce the closest match. However, to be precise in our work, we should not seek the closest match but the exact match or error.
+**Note:** The *VLOOKUP* has 4 arguments. The last argument is *FALSE* because, if we had *TRUE* instead, the formula will produce the closest match. However, to be precise in our work, we should not seek the closest match but have an output of the exact match or error.
+
+### HLOOKUP()
+
+*HLOOKUP* in Excel stands for ‘Horizontal Lookup’. It is a function that makes Excel search for a certain value in a row (the so-called ‘table array’), in order to return a value from a different row in the same column. Similar to a *VLOOKUP*, a *HLOOKUP* formula will take a similar form as the below:
+
+```
+=HLOOKUP($B$3,'Master Inventory List'!$A$2:$G$5,2,FALSE)
+```
+
+### INDEX() and MATCH() Function
+
+The *VLOOKUP* and *HLOOKUP* are both powerful tools however, come with a limitation. The limitation is that they both start with the cell/column of the identification key to the left. Therefore, any data to the left of that cell/column is not able to be used. To eliminate this, we could cut and paste the identification column to the left of the table, but that means we have altered the data structure which is never a good idea as we may have applications/other worksheets using the current data structure. In addition, *VLOOKUP* is very slow. Therefore, if we have many Lookups in a workbook, it may take time to load up or save. *INDEX* and *MATCH* functions merge together to overcome these limitations.
+
+The Excel *INDEX* function returns the value at a given location in a range or array. You can use *INDEX* to retrieve individual values, or entire rows and columns. The *MATCH* function is often used together with *INDEX* to provide row and column numbers. An *INDEX* formula will look like the below:
+
+```
+=INDEX('INDEX MATCH Master Emp List'!$A$1:$I$38,10,3)
+```
+
+The value that will be displayed in the cell of which the formula exists is the value of the 10th row and 3rd column, from the table specified in the first argument.
+
+A *MATCH* formula will look like the below:
+
+```
+=MATCH($B4,'INDEX MATCH Master Emp List'!$A$2:$A$38,0)
+```
+
+The value that will be displayed in the cell of which the formula exists, is the row number of the corresponding column of the specified table in the second argument.
+
+Combining *INDEX* and *MATCH* will result in a formula that takes the below shape, for ease of reading it is generic:
+
+```
+=INDEX(Desired_column_from_desired_master_table, MATCH(Lookup_Value,Column_of_master_table_where_lookup_value_exists,0))
+```
+
+**Note:** As we are looking up (indexing) a column and not a table with multiple columns, we are not required to input the third argument.
 
