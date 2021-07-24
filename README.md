@@ -584,9 +584,14 @@ For example, if we wanted to extract the first name of people from a column that
 =LEFT(A2,SEARCH(" ",A2)-1)
 ```
 
-For the above function, we have used *SEARCH* to find the space that seperates the first and second names of a person minus 1. This will produce a number which will only include the characters for the first name. Functions like this can be dragged down and used for the entire worksheet, making them efficient.
+For the above function, we have used *SEARCH* to find the space that separates the first and second names of a person minus 1. This will produce a number which will only include the characters for the first name. Functions like this can be dragged down and used for the entire worksheet, making them efficient.
 
 ### CONCATENATE() Function
 
-We use *CONCATENATE*, one of the text functions, to join two or more text strings into one string. This function takes the generic form given below:
+We use *CONCATENATE* to join two or more text strings into one string. This function takes the generic form given below:
 
+```
+=CONCATENATE(Cell_1," ",Cell_2)
+```
+
+This will result in our current cell having an output of both cells being combined and separated with a space.
