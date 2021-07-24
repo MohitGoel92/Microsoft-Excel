@@ -574,3 +574,17 @@ The functions *LEFT*, *MID*, and *RIGHT* allow us to extract substrings from an 
 =LEN(Cell)
 ```
 
+### SEARCH() Function
+
+The Excel *SEARCH* function returns the location of one text string inside another. *SEARCH* returns the position of the first character of find_text inside within_text. Unlike *FIND*, *SEARCH* allows wildcards, and is not case-sensitive.
+
+For example, if we wanted to extract the first name of people from a column that contains both the first name and second, we could use the below formula:
+
+```
+=LEFT(A2,SEARCH(" ",A2)-1)
+```
+
+For the above formula, we have used *SEARCH* to find the space that seperates the first and second names of a person minus 1. This will produce a number which will only include the characters for the first name. Formulas like this can be dragged down and used for the entire worksheet, making them efficient.
+
+### CONCATENATE() Function
+
