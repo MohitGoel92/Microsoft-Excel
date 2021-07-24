@@ -554,3 +554,4 @@ Combining *INDEX* and *MATCH* will result in a formula that takes the below shap
 
 **Note:** In the above formula, the first argument establishes the master data table, the second argument finds the correct row number and the third argument finds the correct column number. Therefore, although this formula may seem tedious, it is just a small extension of the original/basic *INDEX* function, with two nested *MATCH* functions.
 
+## 
