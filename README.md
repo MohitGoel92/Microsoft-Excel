@@ -547,11 +547,30 @@ The value that will be displayed in the cell of which the formula exists, is the
 Combining *INDEX* and *MATCH* will result in a formula that takes the below shape, for ease of reading it is generic:
 
 ```
-=INDEX(Desired_column_from_desired_master_table, 
+=INDEX(Desired_lookup_table, 
        MATCH(Lookup_value_of_column, Column_of_master_table_where_lookup_value_exists, 0)
        MATCH(Lookup_value_of_row_of_columns, Row_of_column_names_of_master_table, 0))
 ```
 
 **Note:** In the above formula, the first argument establishes the master data table, the second argument finds the correct row number and the third argument finds the correct column number. Therefore, although this formula may seem tedious, it is just a small extension of the original/basic *INDEX* function, with two nested *MATCH* functions.
 
-## 
+## Working with Text Based Functions
+
+### LEFT(), RIGHT() and MID() Functions
+
+The functions *LEFT*, *MID*, and *RIGHT* allow us to extract substrings from an existing string of data within a given cell. These formulas take the generic form given below:
+
+```
+=LEFT(Cell, Number_Of_Characters)
+=RIGHT(Cell, Number_Of_Characters)
+=MID(Cell, Position_Of_Character, Number_Of_Characters)
+```
+
+### LEN() Function
+
+*LEN* function is a text function in excel that returns the length of a string/ text. *LEN* Function in Excel can be used to count the number of characters in a text string and able to count letters, numbers, special characters, non-printable characters, and all spaces from an Excel cell. In simple words, *LEN* Function is used to calculate the length of a text in an Excel cell. This formula takes the generic form given below:
+
+```
+=LEN(Cell)
+```
+
