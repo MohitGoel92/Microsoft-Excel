@@ -392,7 +392,7 @@ To do this, we click on a cell of an empty table we wish to populate from the to
 
 ### Working with Name Ranges
 
-A named range is where one or more cells are grouped together and have been given a name. Using named ranges can make formulas easier to read and understand. They also provide simple navigation via the *Name Box*. For example, if we wanted to find the sum total of a range of cells, the formula may look like the below:
+A named range is where one or more cells are grouped together and have been given a name. Using named ranges can make formulas easier to read and understand. They also provide simple navigation via the *Name Box*. For example, if we wanted to find the sum total of a range of cells, the function may look like the below:
 
 ```
 =SUM(C5:C9)
@@ -433,7 +433,7 @@ The above function will produce a "Yes" if the cell A1 is greater than B2, other
 
 ### The IF() Function with a Name Range
 
-In the above *IF* statement, if we drag the formula down the reference cell B1 will change to B2. If we wish to compare the A column to a number specifically located at cell B1, we must make the cell absolute by using dollar signs. The above formula will look like the below:
+In the above *IF* statement, if we drag the function down the reference cell B1 will change to B2. If we wish to compare the A column to a number specifically located at cell B1, we must make the cell absolute by using dollar signs. The above function will look like the below:
 
 ```
 =IF(A1>$B$1,"Yes","No")
@@ -500,7 +500,7 @@ For instance, an *IFERROR* function may look like the below:
 =IFERROR(VLOOKUP($B11,'Master Emp List'!$A$1:$I$38,3,FALSE),"EMP ID NOT FOUND")
 ```
 
-In the above formula, if the *VLOOKUP* returns an error, instead of an error message it will return the message "EMP ID NOT FOUND". This makes the reasoning of the error clear to the user of the worksheet, therefore making it easier to remedy.
+In the above function, if the *VLOOKUP* returns an error, instead of an error message it will return the message "EMP ID NOT FOUND". This makes the reasoning of the error clear to the user of the worksheet, therefore making it easier to remedy.
 
 ## LOOKUP Functions
 
@@ -508,17 +508,17 @@ The *LOOKUP* function performs an approximate match lookup in a one-column or on
 
 ### VLOOKUP()
 
-*VLOOKUP* stands for 'Vertical Lookup'. It is a function that makes Excel search for a certain value in a column (the so-called 'table array'), in order to return a value from a different column in the same row. A *VLOOKUP()* formula will take a similar form as the below:
+*VLOOKUP* stands for 'Vertical Lookup'. It is a function that makes Excel search for a certain value in a column (the so-called 'table array'), in order to return a value from a different column in the same row. A *VLOOKUP()* function will take a similar form as the below:
 
 ```
 =VLOOKUP($B3,'Master Emp List'!$A$1:$I$38,2,FALSE)
 ```
 
-**Note:** The *VLOOKUP* has 4 arguments. The last argument is *FALSE* because, if we had *TRUE* instead, the formula will produce the closest match. However, to be precise in our work, we should not seek the closest match but have an output of the exact match or error.
+**Note:** The *VLOOKUP* has 4 arguments. The last argument is *FALSE* because, if we had *TRUE* instead, the function will produce the closest match. However, to be precise in our work, we should not seek the closest match but have an output of the exact match or error.
 
 ### HLOOKUP()
 
-*HLOOKUP* in Excel stands for ‘Horizontal Lookup’. It is a function that makes Excel search for a certain value in a row (the so-called ‘table array’), in order to return a value from a different row in the same column. Similar to a *VLOOKUP*, a *HLOOKUP* formula will take a similar form as the below:
+*HLOOKUP* in Excel stands for ‘Horizontal Lookup’. It is a function that makes Excel search for a certain value in a row (the so-called ‘table array’), in order to return a value from a different row in the same column. Similar to a *VLOOKUP*, a *HLOOKUP* function will take a similar form as the below:
 
 ```
 =HLOOKUP($B$3,'Master Inventory List'!$A$2:$G$5,2,FALSE)
@@ -528,23 +528,23 @@ The *LOOKUP* function performs an approximate match lookup in a one-column or on
 
 The *VLOOKUP* and *HLOOKUP* are both powerful tools however, come with a limitation. The limitation is that they both start with the cell/column of the identification key to the left. Therefore, any data to the left of that cell/column is not able to be used. To eliminate this, we could cut and paste the identification column to the left of the table, but that means we have altered the data structure which is never a good idea as we may have applications/other worksheets using the current data structure. In addition, *VLOOKUP* is very slow. Therefore, if we have many Lookups in a workbook, it may take time to load up or save. *INDEX* and *MATCH* functions merge together to overcome these limitations.
 
-The Excel *INDEX* function returns the value at a given location in a range or array. You can use *INDEX* to retrieve individual values, or entire rows and columns. The *MATCH* function is often used together with *INDEX* to provide row and column numbers. An *INDEX* formula will look like the below:
+The Excel *INDEX* function returns the value at a given location in a range or array. You can use *INDEX* to retrieve individual values, or entire rows and columns. The *MATCH* function is often used together with *INDEX* to provide row and column numbers. An *INDEX* function will look like the below:
 
 ```
 =INDEX('INDEX MATCH Master Emp List'!$A$1:$I$38,10,3)
 ```
 
-The value that will be displayed in the cell of which the formula exists is the value of the 10th row and 3rd column, from the table specified in the first argument.
+The value that will be displayed in the cell of which the function exists is the value of the 10th row and 3rd column, from the table specified in the first argument.
 
-A *MATCH* formula will look like the below:
+A *MATCH* function will look like the below:
 
 ```
 =MATCH($B4,'INDEX MATCH Master Emp List'!$A$2:$A$38,0)
 ```
 
-The value that will be displayed in the cell of which the formula exists, is the row number of the corresponding column of the specified table in the second argument.
+The value that will be displayed in the cell of which the function exists, is the row number of the corresponding column of the specified table in the second argument.
 
-Combining *INDEX* and *MATCH* will result in a formula that takes the below shape, for ease of reading it is generic:
+Combining *INDEX* and *MATCH* will result in a function that takes the below shape, for ease of reading it is generic:
 
 ```
 =INDEX(Desired_lookup_table, 
@@ -552,13 +552,13 @@ Combining *INDEX* and *MATCH* will result in a formula that takes the below shap
        MATCH(Lookup_value_of_row_of_columns, Row_of_column_names_of_master_table, 0))
 ```
 
-**Note:** In the above formula, the first argument establishes the master data table, the second argument finds the correct row number and the third argument finds the correct column number. Therefore, although this formula may seem tedious, it is just a small extension of the original/basic *INDEX* function, with two nested *MATCH* functions.
+**Note:** In the above function, the first argument establishes the master data table, the second argument finds the correct row number and the third argument finds the correct column number. Therefore, although this function may seem tedious, it is just a small extension of the original/basic *INDEX* function, with two nested *MATCH* functions.
 
 ## Working with Text Based Functions
 
 ### LEFT(), RIGHT() and MID() Functions
 
-The functions *LEFT*, *MID*, and *RIGHT* allow us to extract substrings from an existing string of data within a given cell. These formulas take the generic form given below:
+The functions *LEFT*, *MID*, and *RIGHT* allow us to extract substrings from an existing string of data within a given cell. These functions take the generic form given below:
 
 ```
 =LEFT(Cell, Number_Of_Characters)
@@ -568,7 +568,7 @@ The functions *LEFT*, *MID*, and *RIGHT* allow us to extract substrings from an 
 
 ### LEN() Function
 
-*LEN* function is a text function in excel that returns the length of a string/ text. *LEN* Function in Excel can be used to count the number of characters in a text string and able to count letters, numbers, special characters, non-printable characters, and all spaces from an Excel cell. In simple words, *LEN* Function is used to calculate the length of a text in an Excel cell. This formula takes the generic form given below:
+*LEN* function is a text function in excel that returns the length of a string/ text. *LEN* Function in Excel can be used to count the number of characters in a text string and able to count letters, numbers, special characters, non-printable characters, and all spaces from an Excel cell. In simple words, *LEN* Function is used to calculate the length of a text in an Excel cell. This function takes the generic form given below:
 
 ```
 =LEN(Cell)
@@ -578,13 +578,15 @@ The functions *LEFT*, *MID*, and *RIGHT* allow us to extract substrings from an 
 
 The Excel *SEARCH* function returns the location of one text string inside another. *SEARCH* returns the position of the first character of find_text inside within_text. Unlike *FIND*, *SEARCH* allows wildcards, and is not case-sensitive.
 
-For example, if we wanted to extract the first name of people from a column that contains both the first name and second, we could use the below formula:
+For example, if we wanted to extract the first name of people from a column that contains both the first name and second, we could use the below function:
 
 ```
 =LEFT(A2,SEARCH(" ",A2)-1)
 ```
 
-For the above formula, we have used *SEARCH* to find the space that seperates the first and second names of a person minus 1. This will produce a number which will only include the characters for the first name. Formulas like this can be dragged down and used for the entire worksheet, making them efficient.
+For the above function, we have used *SEARCH* to find the space that seperates the first and second names of a person minus 1. This will produce a number which will only include the characters for the first name. Functions like this can be dragged down and used for the entire worksheet, making them efficient.
 
 ### CONCATENATE() Function
+
+We use *CONCATENATE*, one of the text functions, to join two or more text strings into one string. This function takes the generic form given below:
 
