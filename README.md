@@ -622,4 +622,15 @@ To access *Trace Dependents*, select the cell where our formula exists -> Go ont
 
 The Excel *Watch Window* is a tool to help you monitor certain cells that you select to watch. Once you specify the cells you want to watch, a new window will pop up displaying real-time changes happening to the cell or cells you're watching.
 
-To access the *Watch Window*
+To access the *Watch Window*, simple select the cell we wish to monitor -> *Formulas* tab -> *Formula Auditing* section -> *Watch Window*.
+
+**Note:** This window will now stay afloat. If we perform any impacting changes, we will notice that the value of our monitored cell has also changed, therefore making us aware.
+
+### Showing Formulas
+
+If you are working on a spreadsheet where a lot of formulas are being used, it may become challenging to comprehend how all those formulas relate to other cells and whether they are indeed correct. Showing formulas in Excel instead of their results can help you track the data used in each calculation and quickly check your formulas for errors. Microsoft Excel provides a really simple and quick way to show formulas in cells.
+
+To perform this, select the *Formulas* tab -> *Formula Auditing* section -> *Show Formulas*.
+
+**Note:** To unshow formulas, simply click the *Show Formulas* button again.
+
