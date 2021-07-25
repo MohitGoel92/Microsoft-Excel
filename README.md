@@ -618,3 +618,8 @@ To access *Trace Dependents*, select the cell where our formula exists -> Go ont
 
 **Note:** To remove the arrows, simply select the option *Remove Arrows* within the *Formula Auditing* section.
 
+### Working with the Watch Window
+
+The Excel *Watch Window* is a tool to help you monitor certain cells that you select to watch. Once you specify the cells you want to watch, a new window will pop up displaying real-time changes happening to the cell or cells you're watching.
+
+To access the *Watch Window*
