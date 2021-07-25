@@ -595,3 +595,26 @@ We use *CONCATENATE* to join two or more text strings into one string. This func
 ```
 
 This will result in our current cell having an output of both cells being combined and separated with a space.
+
+## Auditing a Worksheet
+
+### Tracing Precedents in Formulas
+
+*Trace Precedents* are cells or a group of cells that affect the value of the active cell. Microsoft Excel provides users with the flexibility of doing complex calculations using formulas such as average, sum, count, etc.
+
+However, the formulas may sometimes return wrong values or even give an error message that you must resolve in order to get the correct values. Excel makes it easier to resolve calculation errors by providing easy-to-use tools such as *Trace Precedents* that one can use to audit the calculations.
+
+To access *Trace Precedents*, select the cell where our formula exists -> Go onto the *Formulas* tab -> *Formula Auditing* section -> *Trace Precedents*.
+
+**Note:** To remove the arrows, simply select the option *Remove Arrows* within the *Formula Auditing* section.
+
+### Tracing Dependents in Formulas
+
+*Trace Dependents* is an Excel auditing tool that shows the cells that are affected by an active cell by displaying arrows linking the related cells to the active cell. When the cells are located on the same worksheet, it is relatively straightforward since Excel will link from the related cells to the active cell using blue arrows.
+
+If the cells are linked to another sheet, instead of an arrow linking the cells, there will be a dotted black arrow pointing to a small icon in the worksheet. To view the details of the cells related to the active cell, double-click the dotted line, and it will open a dialog box with a list of the related cells. Click on any of the listed cells to view the details of the cell.
+
+To access *Trace Dependents*, select the cell where our formula exists -> Go onto the *Formulas* tab -> *Formula Auditing* section -> *Trace Dependents*.
+
+**Note:** To remove the arrows, simply select the option *Remove Arrows* within the *Formula Auditing* section.
+
