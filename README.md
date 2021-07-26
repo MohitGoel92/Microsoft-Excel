@@ -662,7 +662,7 @@ Adding a password to a workbook will restrict the user base of that workbook as 
 
 ### Goal Seek Tool
 
-If you know the result that you want from a formula, but are not sure what input value the formula needs to get that result, use the Goal Seek feature. For example, suppose that you need to borrow some money. You know how much money you want, how long you want to take to pay off the loan, and how much you can afford to pay each month. You can use Goal Seek to determine what interest rate you will need to secure in order to meet your loan goal.
+If you know the result that you want from a formula, but are not sure what input value the formula needs to get that result, use the Goal Seek feature. For example, suppose that you need to borrow some money. You know how much money you want, how long you want to take to pay off the loan, and how much you can afford to pay each month. You can use Goal Seek to determine what interest rate you will need to secure in order to meet your loan goal. In this case, we are required to take two steps. Firstly we will use the *PMT* function, and then the *What-If Analysis*.
 
 #### PMT Function 
 
@@ -674,7 +674,15 @@ The *PMT Function* is a financial function which calculates the payment for a lo
 
 where:
 
-- Rate: The interest rate for the loan.
+- Rate: The interest rate for the loan, this is usually the (Interest Rate/12).
 - Nper: The total number of payments for the loan.
 - Pv: The present value, or the total amount that a series of future payments is worth now; also known as the principal.
+
+#### What-If Analysis (Goal Seek Tool)
+
+To utilise the *Goal Seek* Tool, navigate to the *Data* tab -> *Forecast* section -> *What-If Analysis* -> *Goal Seek*. 
+
+In my experiences, this tool may be potentially confusing to use at first so for further information please use the below resource:
+
+https://support.microsoft.com/en-us/office/use-goal-seek-to-find-the-result-you-want-by-adjusting-an-input-value-320cb99e-f4a4-417f-b1c3-4f369d6e66c7
 
