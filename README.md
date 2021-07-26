@@ -660,3 +660,21 @@ Adding a password to a workbook will restrict the user base of that workbook as 
 
 ## What If Tools
 
+### Goal Seek Tool
+
+If you know the result that you want from a formula, but are not sure what input value the formula needs to get that result, use the Goal Seek feature. For example, suppose that you need to borrow some money. You know how much money you want, how long you want to take to pay off the loan, and how much you can afford to pay each month. You can use Goal Seek to determine what interest rate you will need to secure in order to meet your loan goal.
+
+#### PMT Function 
+
+The *PMT Function* is a financial function which calculates the payment for a loan based on constant payments and a constant interest rate. This function takes the generic form given below:
+
+```
+= PMT(Rate, Nper, Pv)
+```
+
+where:
+
+- Rate: The interest rate for the loan.
+- Nper: The total number of payments for the loan.
+- Pv: The present value, or the total amount that a series of future payments is worth now; also known as the principal.
+
