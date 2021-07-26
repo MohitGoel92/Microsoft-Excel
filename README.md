@@ -700,3 +700,7 @@ Please see a screenshot of an example below where this tool has been used. The e
 
 ### Building Data Tables with What-If Analysis
 
+We are able to build data tables using the *What-If Analysis*. For instance, using the *PMT* function as previously observed, we can calculate the *PMT* using a specific interest rate but also create a table of values that display the *PMT* for different interest rates. For clarity, let's observe the screenshot below from the workbook included in Section 3:
+
+
+<p align="center"> <img width="1200" src= "/Pics/Data_Table.PNG"> </p>
