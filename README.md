@@ -696,4 +696,4 @@ The *Solver* tool however is not a standard tool. We are therefore required to m
 
 Please see a screenshot of an example below where this tool has been used. The example is from a worksheet that is included within the Section 3 folder attached.
 
-<p align="center"> <img width="800" src= "/Pics/Solver.PNG"> </p>
+<p align="center"> <img width="1200" src= "/Pics/Solver.PNG"> </p>
