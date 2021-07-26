@@ -715,3 +715,5 @@ A *Scenario* is a set of values that Excel saves and can substitute automaticall
 For clarity, let's observe the screenshot below from the workbook included in Section 3:
 
 <p align="center"> <img width="1200" src= "/Pics/Scenarios.PNG"> </p>
+
+In the above example we have three scenarios, they are "Default", "Best Case Scenario" and "Worst Case Scenario". Selecting any one of these in the *Scenarios* box and selecting *Show* will alter the numbers in the bottom table to preset values which will impact the growth numbers in the above table. This enables us to show how the numbers will be impacted with each scenario. This is a great visual representation of scenario analysis. 
