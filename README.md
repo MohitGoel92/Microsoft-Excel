@@ -664,7 +664,7 @@ Adding a password to a workbook will restrict the user base of that workbook as 
 
 If you know the result that you want from a formula, but are not sure what input value the formula needs to get that result, use the Goal Seek feature. For example, suppose that you need to borrow some money. You know how much money you want, how long you want to take to pay off the loan, and how much you can afford to pay each month. You can use Goal Seek to determine what interest rate you will need to secure in order to meet your loan goal. In this case, we are required to take two steps. Firstly we will use the *PMT* function, and then the *What-If Analysis*.
 
-#### PMT Function 
+#### The Payment Function (PMT)
 
 The *PMT Function* is a financial function which calculates the payment for a loan based on constant payments and a constant interest rate. This function takes the generic form given below:
 
@@ -685,4 +685,12 @@ To utilise the *Goal Seek* Tool, navigate to the *Data* tab -> *Forecast* sectio
 In my experiences, this tool may be potentially confusing to use at first so for further information please use the below resource:
 
 https://support.microsoft.com/en-us/office/use-goal-seek-to-find-the-result-you-want-by-adjusting-an-input-value-320cb99e-f4a4-417f-b1c3-4f369d6e66c7
+
+### The Solver Tool
+
+*Solver* is a Microsoft Excel add-in program we can use for what-if analysis. We use *Solver* to find an optimal (maximum or minimum) value for a formula in one cell — called the objective cell — subject to constraints, or limits, on the values of other formula cells on a worksheet. Solver works with a group of cells, called decision variables or simply variable cells that are used in computing the formulas in the objective and constraint cells. Solver adjusts the values in the decision variable cells to satisfy the limits on constraint cells and produce the result you want for the objective cell.
+
+Put simply, we can use *Solver* to determine the maximum or minimum value of one cell by changing other cells. For example, you can change the amount of our projected advertising budget and see the effect on our projected profit amount.
+
+The *Solver* tool however is not a standard tool. We are therefore required to manually activate it ourself. To do this we navigate to *File* -> *Options* -> *Add-ins* -> Hit *Go...* next to *Manage: Excel Add-ins* -> Tick the box *Solver Add-in*. This new add-in called *Solver* will appear in the *Analyze* section of the *Data* tab.
 
