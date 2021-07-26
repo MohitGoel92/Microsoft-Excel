@@ -634,3 +634,29 @@ To perform this, select the *Formulas* tab -> *Formula Auditing* section -> *Sho
 
 **Note:** To unshow formulas, simply click the *Show Formulas* button again.
 
+## Protecting Worksheets and Workbooks
+
+To prevent other users from accidentally or deliberately changing, moving, or deleting data in a worksheet, you can lock the cells on your Excel worksheet and then protect the sheet with a password. Say you own the team status report worksheet, where you want team members to add data in specific cells only and not be able to modify anything else. With worksheet protection, you can make only certain parts of the sheet editable and users will not be able to modify data in any other region in the sheet.
+
+### Protecting Specific Cells in a Workbook
+
+Every cell in an Excel workbook has a property called locked, of which is always turned on. To not allow anyone to make any changes to a cell(s), worksheet or workbook, we only need to lock the cell(s), workbook or worksheet. However, there are two steps to this process of which are given below:
+
+**Step 1:** Highlight the cell(s) we wish to allow the user of the worksheet to update -> *Home* tab -> *Font* section -> *Font Setting* button at the bottom right corner of the section -> *Protection* tab -> Untick the *Locked* box. The cell(s) is now unlocked, which removes the lock from the cell(s).
+
+**Step 2:** We are now going to protect the sheet. To do this, we go onto the *Review* tab -> *Protect* section -> *Protect Sheet* option -> Create a password (optional) -> Click *OK*.
+
+### Protecting the Structure of a Workbook
+
+We are able to protect the structure of the workbook. This will not allow the user of the workbook to perform actions such as creating a new tab, deleting an existing tab, renaming a tab or reordering tabs. 
+
+To perform this we navigate to the *Review* tab -> *Protect* section -> *Protect Workbook* -> Create a new password (optional) -> Select *OK*.
+
+### Adding a Workbook Password
+
+Adding a password to a workbook will restrict the user base of that workbook as only those with the password will be able to open/access it. To create a password for the workbook, simply navigate to the *File* tab -> *Info* -> *Protect Workbook* -> *Encrypt with Password* -> Set password -> *OK*.
+
+**Note:** To remove the password, follow the same procedure but instead of setting a new password, simply leave it blank.
+
+## What If Tools
+
