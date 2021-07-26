@@ -710,3 +710,8 @@ We will observe all the cells being populated with the Monthly Payment reflectin
 
 ### Creating Scenarios
 
+A *Scenario* is a set of values that Excel saves and can substitute automatically on our worksheet. We can create and save different groups of values as scenarios and then switch between these scenarios to view the different results. If several people have specific information that you want to use in scenarios, you can collect the information in separate workbooks, and then merge the scenarios from the different workbooks into one. After you have all the scenarios you need, you can create a scenario summary report that incorporates information from all the scenarios. Scenarios are managed with the *Scenario Manager* wizard from the *What-If Analysis* section on the *Data* tab.
+
+For clarity, let's observe the screenshot below from the workbook included in Section 3:
+
+<p align="center"> <img width="1200" src= "/Pics/Scenarios.PNG"> </p>
