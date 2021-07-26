@@ -694,3 +694,6 @@ Put simply, we can use *Solver* to determine the maximum or minimum value of one
 
 The *Solver* tool however is not a standard tool. We are therefore required to manually activate it ourself. To do this we navigate to *File* -> *Options* -> *Add-ins* -> Hit *Go...* next to *Manage: Excel Add-ins* -> Tick the box *Solver Add-in*. This new add-in called *Solver* will appear in the *Analyze* section of the *Data* tab.
 
+Please see a screenshot of an example below where this tool has been used. The example is from a worksheet that is included within the Section 3 folder attached.
+
+<p align="center"> <img width="800" src= "/Pics/Solver"> </p>
