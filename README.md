@@ -702,5 +702,11 @@ Please see a screenshot of an example below where this tool has been used. The e
 
 We are able to build data tables using the *What-If Analysis*. For instance, using the *PMT* function as previously observed, we can calculate the *PMT* using a specific interest rate but also create a table of values that display the *PMT* for different interest rates. For clarity, let's observe the screenshot below from the workbook included in Section 3:
 
-
 <p align="center"> <img width="1200" src= "/Pics/Data_Table.PNG"> </p>
+
+From the above, we have computed cell C7 using the *PMT* function by using cells C2, C3 and C4. However, if we wanted to compute the Monthly Payment for cells C8 to C14 using the interest rates from Column B, we are only required to first highlight the two columns -> *Data* tab -> Select *What-If Analysis* from the *Forecast* section -> *Data Table ...* -> Input cell C3 within the *Column Input Cell:* box -> *OK*.
+
+We will observe all the cells being populated with the Monthly Payment reflecting the change in interest rates in Column B.
+
+### Creating Scenarios
+
