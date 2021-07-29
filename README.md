@@ -716,4 +716,27 @@ For clarity, let's observe the screenshot below from the workbook included in Se
 
 <p align="center"> <img width="1200" src= "/Pics/Scenarios.PNG"> </p>
 
-In the above example we have three scenarios, they are "Default", "Best Case Scenario" and "Worst Case Scenario". Selecting any one of these in the *Scenarios* box and selecting *Show* will alter the numbers in the bottom table to preset values which will impact the growth numbers in the above table. This enables us to show how the numbers will be impacted with each scenario. This is a great visual representation of scenario analysis. 
+In the above example we have three scenarios, they are "Default", "Best Case Scenario" and "Worst Case Scenario". Selecting any one of these in the *Scenarios* box and selecting *Show* will alter the numbers in the bottom table to preset values which will impact the growth numbers in the above table. This enables us to show how the numbers will be impacted with each scenario. This is a great visual representation of scenario analysis.
+
+## Automating Repetitive Tasks with Macros
+
+Excel *Macro* is a record and playback tool that simply records your Excel steps and the macro will play it back as many times as you want. VBA Macros save time as they automate repetitive tasks. It is a piece of programming code that runs in an Excel environment but you don’t need to be a coder to program macros. Though, you need basic knowledge of VBA to make advanced modifications in the macro.
+
+*VBA* is the acronym for Visual Basic for Applications. It is a programming language that Excel uses to record your steps as you perform routine tasks. You do not need to be a programmer or a very technical person to enjoy the benefits of macros in Excel. Excel has features that automatically generate the source code for you.
+
+### Activating the Developer Tab
+
+The *Developer* tab, which is a built-in tab in Excel, provides the features needed to use Visual Basic for Applications (VBA) and perform a macro operation. The tab allows users to create VBA applications, design forms, create macros, import and export XML data, etc. The tab is disabled by default. It must be enabled first in the *Options* section on the *File* menu to make it visible on the toolbar at the top of the Excel window. 
+
+To activate the *Developer* tab, we navigate and right click on any tab name -> Select *Customize the Ribbon* -> Select the *Customize Ribbon* option on the left of the window -> Tick the *Developer* box -> *OK*. The *Developer* tab is now active and will appear at the top like all the other tabs.
+
+### Creating a Macro with the Macro Recorder
+
+To create a macro, we simply navigate to the *Developer* tab -> *Code* section -> Select *Record Macro* -> Name the macro -> Set the shortcut key -> Select where to store the macro -> Write a description of the macro -> *OK*.
+
+As soon as we click *OK*, the macro starts recording. Anything we do now is captured by Excel. When we have completed the desired steps, we simply click *Stop Recording* in the *Code* section of the *Developer* tab.
+
+**Note:** When setting a keyboard shortcut for the macro, it is imperative to consider that the shortcut will override any existing shortcut. Therefore, try to avoid setting the macro shortcut to any pre-existing shortcut.
+
+### Editing a Macro with VBA
+
