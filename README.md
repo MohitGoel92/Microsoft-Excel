@@ -740,3 +740,103 @@ As soon as we click *OK*, the macro starts recording. Anything we do now is capt
 
 ### Editing a Macro with VBA
 
+Suppose during the recording of the macro we make an error. This does not mean we are now required to re-record all the steps again as we can simply change the steps where we have made the error using VBA. To access this, navigate to the *Developer* tab -> *Code* section -> Select *Visual Basic* -> In the project window on the top left scroll down to *Modules* (macros are stored as modules) -> Select the module from the bottom left window ->  The code will now appear on the window on the right.
+
+In our example from the Excel workbook from section 3, the VBA code will appear as below:
+
+```
+Sub FormatTable()
+'
+' FormatTable Macro
+' This macros places headers on the table and formats the data.
+'
+' Keyboard Shortcut: Ctrl+j
+'
+    Rows("1:1").Select
+    Selection.Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "EMP ID"
+    Range("B1").Select
+    ActiveCell.FormulaR1C1 = "Last Name"
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "First Name"
+    Range("D1").Select
+    ActiveCell.FormulaR1C1 = "Dept"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "Email"
+    Range("F1").Select
+    ActiveCell.FormulaR1C1 = "Ext"
+    Range("G1").Select
+    ActiveCell.FormulaR1C1 = "Location"
+    Range("H1").Select
+    ActiveCell.FormulaR1C1 = "Hire Date"
+    Range("I1").Select
+    ActiveCell.FormulaR1C1 = "Pay"
+    Cells.Select
+    Cells.EntireColumn.AutoFit
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("A1:I1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = 0.599993896298105
+        .PatternTintAndShade = 0
+    End With
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = 0.399975585192419
+        .PatternTintAndShade = 0
+    End With
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    Range("A1:I1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = -0.499984740745262
+        .PatternTintAndShade = 0
+    End With
+    Range("A1:I1").Select
+    Selection.Font.Size = 11
+    Selection.Font.Bold = True
+    Cells.Select
+    Cells.EntireColumn.AutoFit
+    Range("I2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveWindow.SmallScroll Down:=-39
+    Selection.NumberFormat = _
+        "_-[$$-en-US]* #,##0.00_ ;_-[$$-en-US]* -#,##0.00 ;_-[$$-en-US]* ""-""??_ ;_-@_ "
+    Range("H2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.NumberFormat = "dd/mmm/yy"
+    Selection.NumberFormat = "d-mmm-yy"
+    Cells.Select
+    Selection.ColumnWidth = 13.09
+    Range("A1").Select
+    Selection.AutoFilter
+    Selection.ColumnWidth = 15
+    Columns("B:B").AutoFit
+    Columns("C:C").AutoFit
+End Sub
+```
+
+Without getting too into VBA at this stage, using simple logic we are able to edit the code and tailor it to our desired final output.
+
+### Creating Buttons to Run Macros
+
+In order to run our macro, we simply navigate to the *Developer* tab -> *Code* section -> *Macros* -> Select the desired macro and hit *Run*. Alternatively, we can produce a button at the side of the worksheet that also runs our desired macro. To do this we simply navigate to the *Controls* section within the *Developer* tab -> Select *Insert* -> Select the first option called *Button*. We simply set up the button by making our own box, right clicking it to make visual changes, clicking somewhere within the worksheet to get out of edit mode and selecting it using the left click to run. Both of these approaches are valid when trying to run macros.
+
