@@ -852,7 +852,7 @@ In this section, we will discuss projects that build upon each other to deepen o
 
 ### Project 1
 
-In this project, we will get aquainted with the Excel Macro recorder. For this project, we will simply record us adding column headers and formatting them to our data. This will then be used to perform the same task in the following tab using the shortcut *CTRL + j*, and using a button on the following tab.
+In this project, we will get acquainted with the Excel Macro recorder. For this project, we will simply record us adding column headers and formatting them to our data. This will then be used to perform the same task in the following tab using the shortcut *CTRL + j*, and using a button on the following tab.
 
 
 ### Project 2
