@@ -840,3 +840,13 @@ Without getting too into VBA at this stage, using simple logic we are able to ed
 
 In order to run our macro, we simply navigate to the *Developer* tab -> *Code* section -> *Macros* -> Select the desired macro and hit *Run*. Alternatively, we can produce a button at the side of the worksheet that also runs our desired macro. To do this we simply navigate to the *Controls* section within the *Developer* tab -> Select *Insert* -> Select the first option called *Button*. We simply set up the button by making our own box, right clicking it to make visual changes, clicking somewhere within the worksheet to get out of edit mode and selecting it using the left click to run. Both of these approaches are valid when trying to run macros.
 
+## Macros and VBA Projects
+
+In this section, we will discuss projects that build upon each other to deepen our understanding of VBA and automation. In the seven projects we will discuss:
+
+- **Automation**: The objective is to hit a single button and our report or final product should be ready.
+- **Macro Recorder**: There are a few different ways where we can automate our experience through macros. The first way we will discuss is the *Macro Recorder*. This is where Excel records our moves by writing them out in the background using code.
+- **VBA Concepts**: Here will discuss *Looping Structures* which is useful if we want something to happen multiple times. We create logical statements to achieve this. In addition, we will go through variables.
+- **Dynamic Code**: *Dynamic* formulas allow us to insert Excel's formulas into cells even when the formula must reference rows that will be inserted later during the merge process. They can repeat for each inserted row or use only the cell where the field is placed. In other words, *Dynamic Code* accommodates for differences in the data, for instance, if the amount of data being received is not consistent.
+- **Reusable Code**: *Reusable Code* is code that can be reused without having to re-write it everywhere.
+
