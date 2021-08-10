@@ -849,6 +849,13 @@ In this section, we will discuss projects that build upon each other to deepen o
 - **VBA Concepts**: Here will discuss *Looping Structures* which is useful if we want something to happen multiple times. We create logical statements to achieve this. In addition, we will go through variables.
 - **Dynamic Code**: *Dynamic* formulas allow us to insert Excel's formulas into cells even when the formula must reference rows that will be inserted later during the merge process. They can repeat for each inserted row or use only the cell where the field is placed. In other words, *Dynamic Code* accommodates for differences in the data, for instance, if the amount of data being received is not consistent.
 - **Reusable Code**: *Reusable Code* is code that can be reused without having to re-write it everywhere.
+- **Variables**: Declaring a variable helps us store information such as single or multiple values, where it can easily be retrieved. For instance, an input from a user by asking them a question.
+- **Logical Statements**: Logical functions are used test whether a situation is true or false. Depending on the result of that test, we can then elect to do one thing or another. These decisions can be used to display information, perform different calculations, or to perform further tests.
+- **Loops**: We will learn how to get blocks of code or entire procedures of code to run multiple times. With a loop we can perform tasks that are to be repeated for all worksheets simultaneously.
+
+### VBA Modules
+
+When we record a Macro, it will show up within the *VBA* window as a module. If we wish to write our own *VBA* code, we will have to first create a new module by navigating onto the options bar at the top of the *VBA* window -> *Insert* -> *Module*. 
 
 ### Project 1
 
