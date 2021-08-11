@@ -1009,7 +1009,7 @@ We observe that the user input is now a numeric value and the IF statement is we
 
 ### Working with Loops to Repeat Blocks of Code
 
-We will be discussing a *Do While Loop*, a very common loop. The Excel *Do While Loop* function is used to loop through a set of defined instructions/code while a specific condition is true.
+We will be discussing a *Do While Loop*, a very common loop. The Excel *Do While Loop* function is used to loop through a set of defined instructions/code while a specific condition is true. Let's observe the below *VBA* Code:
 
 ```
 Public Sub FirstLoop()
@@ -1031,6 +1031,10 @@ Public Sub FirstLoop()
     Loop
 End Sub
 ```
+
+Where: 
+
+- 
 
 
 
