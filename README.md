@@ -850,7 +850,7 @@ In this section, we will discuss projects that build upon each other to deepen o
 - **Dynamic Code**: *Dynamic* formulas allow us to insert Excel's formulas into cells even when the formula must reference rows that will be inserted later during the merge process. They can repeat for each inserted row or use only the cell where the field is placed. In other words, *Dynamic Code* accommodates for differences in the data, for instance, if the amount of data being received is not consistent.
 - **Reusable Code**: *Reusable Code* is code that can be reused without having to re-write it everywhere.
 - **Variables**: Declaring a variable helps us store information such as single or multiple values, where it can easily be retrieved. For instance, an input from a user by asking them a question.
-- **Logical Statements**: Logical functions are used test whether a situation is true or false. Depending on the result of that test, we can then elect to do one thing or another. These decisions can be used to display information, perform different calculations, or to perform further tests.
+- **Logical Statements**: Logical functions are used to test whether a situation is true or false. Depending on the result of that test, we can then elect to do one thing or another. These decisions can be used to display information, perform different calculations, or to perform further tests.
 - **Loops**: We will learn how to get blocks of code or entire procedures of code to run multiple times. With a loop we can perform tasks that are to be repeated for all worksheets simultaneously.
 
 ### VBA Modules
@@ -867,7 +867,7 @@ Now that we've gotten our *Module*, we must insert a *Procedure*, name the *Proc
 
 **Sub (or Sub Procedure)**
 
-Sub is a set of codes to run within key word *Sub* and *End Sub*. You can think of it as a list of instructions of what you want VBA to do in order. For example, if we want to automate a bunch of actions such as adding formatted headers to our dataset, then we write those down for *VBA* to execute.
+Sub is a set of codes to run within the keywords *Sub* and *End Sub*. You can think of it as a list of instructions of what you want VBA to do in order. For example, if we want to automate a bunch of actions such as adding formatted headers to our dataset, then we write those down for *VBA* to execute.
 
 Note the below key differences between Sub and Function:
 
@@ -885,15 +885,15 @@ y = 2x+3, or
 y = f(x)
 ```
 
-In the above formula, the value of y depends on x. In mathematics we call y the “dependent variable” and x as “independent variable”, because y depends on x. We also call this formula “y is a function of x”, as theformula 2x+3 or f(x) returns value y. In Excel we have used Functions before, such as SUM, COUNT, TEXT and VLOOKUP. The returned value depends on the Function parameter (or argument).
+In the above formula, the value of y depends on x. In mathematics we call y the “dependent variable” and x as “independent variable”, because y depends on x. We also call this formula “y is a function of x”, as the formula 2x+3 or f(x) returns value y. In Excel we have used Functions before, such as SUM, COUNT, TEXT and VLOOKUP. The returned value depends on the Function parameter (or argument).
 
 Below is a summary of Function.
 
-1) Function usually requires one or more parameters (arguments) from user.
+1) Function usually requires one or more parameters (arguments) from the user.
 
 2) Function returns a value.
 
-3) Function can be used independently, which means the use of a formula is not bounded to be used only by specific Cells or Worksheets.
+3) Function can be used independently, which means the use of a formula is not bound to be used only by specific Cells or Worksheets.
 
 Similar to a Worksheet Function (those you use everyday in Excel), VBA also offers a lot of additional Functions but they come from a completely different library. You may still find the Excel VBA library quite similar to Worksheet library but they are different in terms of syntax and you fail to find many Worksheet Function in Excel VBA library.
 
@@ -919,7 +919,7 @@ val = Range("A1").Formula
 
 Method can only be used in VBA, but not in an Excel worksheet. In terms of declaration, *Method* is the same as *Function* except that *Method* only works for a particular Object.
 
-In Excel, “Object” mostly refers to a Range, Worksheet or Workbook. Each Object has it own set of Methods, for example, Range has its exclusive Method called “Autofill” used to autofill formula in the cells below.
+In Excel, “Object” mostly refers to a Range, Worksheet or Workbook. Each Object has its own set of Methods, for example, Range has its exclusive Method called “Autofill” used to autofill formulas in the cells below.
 
 ```
 Set sourceRange = Worksheets("Sheet1").Range("A1:A2") 
@@ -930,14 +930,14 @@ sourceRange.AutoFill Destination:=fillRange
 **Note:** Different Objects may use the same Method name, but they can be entirely different things.
 
 Below are some attributes of Method:
-
-1) Method usually requires one or more parameters (arguments) from user, but allow no argument.
-
-2) Method always return something, for instance an Object, Number or String.
-
+ 
+1) Method usually requires one or more parameters (arguments) from the user, but allows no argument.
+ 
+2) Method always returns something, for instance an Object, Number or String.
+ 
 3) Method requires an Object to act on, it cannot be used independently.
-
-4) Method has its own library. Therefore it is imperative to not mix up Function library with Method Library.
+ 
+4) Method has its own library. Therefore it is imperative to not mix up the Function library with Method Library.
 
 **Scope: Public and Private**
 
