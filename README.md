@@ -955,6 +955,83 @@ End Sub
 
 ### Adding Code to a VBA Procedure
 
+Let's observe the simple VBA code below:
+
+```
+Public Sub FirstProcedure()
+    ActiveCell.Value = "Excel VBA"
+End Sub
+```
+
+If we go back to our Excel worksheet and search for the our Macros, the above Macro called "FirstProcedure" will be present. If we select it and run it, the string "Excel VBA" will be produced within that cell.
+
+### VBA Variables
+
+A *Variable* is a location within our code (or memory) where we can store content. A typical example where a variable is used is when the *Procedure* will recieve an input from a user and use it later in some way. For instance, let's observe the VBA code below:
+
+```
+Public Sub FirstProcedure()
+    Dim UserInput As String
+    
+    UserInput = "Hello World!"
+    
+    ActiveCell.Value = UserInput
+End Sub
+```
+
+where:
+
+- *Dim* stands for dimension which creates some space (plots out some space or the "dimension") of which we can put something inside of. *Dim* creates a standard variable.
+- UserInput is the variable name.
+- *As String* declares our variable type as a string or text value. Other types include Integer, Boolean ... etc.
+
+**Note:** If we click onto a cell within our worksheet, we can simply click the *Run* button and the *Procedure* will execute and perform the stated actions.
+
+### Building Logical IF Statements
+
+Let's observe the below IF statement:
+
+```
+Public Sub FirstProcedure()
+    Dim UserInput As String
+    
+    UserInput = "21"
+    
+    If UserInput > 20 Then
+        ActiveCell.Value = "Access Granted"
+    Else
+        ActiveCell.Value = UserInput
+    End If
+End Sub
+```
+
+We observe that the user input is now a numeric value and the IF statement is wedged between *If* and *End If*. As the conditions state, if the UserInput is greater than 20, the cell we have clicked onto will have the output "Access Granted", otherwise it will generate the number inputted. In our case, 21 is greater than 20, therefore the *Procedure* will produce the output "Access Granted".
+
+### Working with Loops to Repeat Blocks of Code
+
+We will be discussing a *Do While Loop*, a very common loop. The Excel *Do While Loop* function is used to loop through a set of defined instructions/code while a specific condition is true.
+
+```
+Public Sub FirstLoop()
+
+    Dim i As Integer
+    
+    i = 1
+    
+    Do While i <= 10
+        
+        If ActiveCell.Value > 10 Then
+            ActiveCell.Interior.Color = RGB(255, 0, 0)
+        End If
+        
+        ActiveCell.Offset(1, 0).Select
+        
+        i = i + 1
+    
+    Loop
+End Sub
+```
+
 
 
 ### Project 1
