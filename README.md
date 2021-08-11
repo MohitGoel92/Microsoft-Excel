@@ -855,7 +855,93 @@ In this section, we will discuss projects that build upon each other to deepen o
 
 ### VBA Modules
 
-When we record a Macro, it will show up within the *VBA* window as a module. If we wish to write our own *VBA* code, we will have to first create a new module by navigating onto the options bar at the top of the *VBA* window -> *Insert* -> *Module*. 
+When we record a Macro, it will show up within the *VBA* window as a module. If we wish to write our own *VBA* code, we will have to first create a new module by navigating onto the options bar at the top of the *VBA* window -> *Insert* -> *Module*.
+
+### Creating a VBA Procedure
+
+Now that we've got our module, we can begin writing our own code. However, in a new module we do not simply start typing code using our keyboard, as there are very specific key words and structures that *VBA* expects us to adhere to as we write our code. When recording a Macro using the *Record Macro* button, excel is writing down all the code in the background in what's called a *Procedure*. 
+
+**Note:** A *Procedure* is a *Macro* and vice versa.
+
+Now that we've gotten our *Module*, we must insert a *Procedure*, name the *Procedure* and then put our code inside that *Procedure*. To do this we navigate to the options bar at the top of the *VBA* window -> Select our current *Module* -> *Insert* -> *Procedure ...*. We now observe a new window called *Add Procedure*. We firstly insert our desired name at the top, and then observe three options called *Sub*, *Function* and *Property*.
+
+**Sub (or Sub Procedure)**
+
+Sub is a set of codes to run within key word *Sub* and *End Sub*. You can think of it as a list of instructions of what you want VBA to do in order. For example, if we want to automate a bunch of actions such as adding formatted headers to our dataset, then we write those down for *VBA* to execute.
+
+Note the below key differences between Sub and Function:
+
+1) Sub can take parameters from a user.
+
+2) Sub cannot return a value.
+
+**Function (or Function Procedure)**
+
+Consider the following formula:
+
+```
+y = 2x+3, or
+
+y = f(x)
+```
+
+In the above formula, the value of y depends on x. In mathematics we call y the “dependent variable” and x as “independent variable”, because y depends on x. We also call this formula “y is a function of x”, as theformula 2x+3 or f(x) returns value y. In Excel we have used Functions before, such as SUM, COUNT, TEXT and VLOOKUP. The returned value depends on the Function parameter (or argument).
+
+Below is a summary of Function.
+
+1) Function usually requires one or more parameters (arguments) from user.
+
+2) Function returns a value.
+
+3) Function can be used independently, which means the use of a formula is not bounded to be used only by specific Cells or Worksheets.
+
+Similar to a Worksheet Function (those you use everyday in Excel), VBA also offers a lot of additional Functions but they come from a completely different library. You may still find the Excel VBA library quite similar to Worksheet library but they are different in terms of syntax and you fail to find many Worksheet Function in Excel VBA library.
+
+**Property**
+
+Property is the “attribute” or “characteristics” of an Object. For example, Range has attributes such as colour and border colour. You can set a Property to a Range, or you can retrieve the Property value from a Range.
+
+Property has the ability to set and retrieve value because Property is declared as a pair, one declares using Let, one declares using Get, but there are Property that do not have the retrieval part declared.
+
+Below is an example to set a formula in Range A1:
+
+```
+Range("A1").Formula = "=A4+A10"
+```
+
+Or you can retrieve a formula from A1:
+
+```
+val = Range("A1").Formula
+```
+
+**Method**
+
+Method can only be used in VBA, but not in an Excel worksheet. In terms of declaration, *Method* is the same as *Function* except that *Method* only works for a particular Object.
+
+In Excel, “Object” mostly refers to a Range, Worksheet or Workbook. Each Object has it own set of Methods, for example, Range has its exclusive Method called “Autofill” used to autofill formula in the cells below.
+
+```
+Set sourceRange = Worksheets("Sheet1").Range("A1:A2") 
+Set fillRange = Worksheets("Sheet1").Range("A1:A20") 
+sourceRange.AutoFill Destination:=fillRange
+```
+
+**Note:** Different Objects may use the same Method name, but they can be entirely different things.
+
+Below are some attributes of Method:
+
+1) Method usually requires one or more parameters (arguments) from user, but allow no argument.
+
+2) Method always return something, for instance an Object, Number or String.
+
+3) Method requires an Object to act on, it cannot be used independently.
+
+4) Method has its own library. Therefore it is imperative to not mix up Function library with Method Library.
+
+**Scope: Public and Private**
+
+Below the *Type* options we have two *Scope* options, *Public* and *Private*. The basic concept is that *Public* variables, subs or functions can be seen and used by all modules in the workbook while *Private* variables, subs and functions can only be used by code within the same module. 
 
 ### Project 1
 
