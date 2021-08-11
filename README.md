@@ -941,7 +941,21 @@ Below are some attributes of Method:
 
 **Scope: Public and Private**
 
-Below the *Type* options we have two *Scope* options, *Public* and *Private*. The basic concept is that *Public* variables, subs or functions can be seen and used by all modules in the workbook while *Private* variables, subs and functions can only be used by code within the same module. 
+Below the *Type* options we have two *Scope* options, *Public* and *Private*. The basic concept is that *Public* variables, subs or functions can be seen and used by all modules in the workbook while *Private* variables, subs and functions can only be used by code within the same module.
+
+For our learning purposes, we will name the procedure FirstProcedure, select *Sub Type* and *Public Scope*. When we hit the *OK*, we observe the following within the VBA window:
+
+```
+Public Sub FirstProcedure()
+
+End Sub
+```
+
+**Note:** As we get more experienced with *VBA*, we will not be able to type this out without following the above procedure.
+
+### Adding Code to a VBA Procedure
+
+
 
 ### Project 1
 
