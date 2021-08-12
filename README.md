@@ -1042,8 +1042,6 @@ where:
 - *ActiveCell.Value > 10* is our condition that will decide to either colour the background or not. In this case, if the cell contains a value greater than 10, the background will be coloured.
 - *ActiveCell.**Interior.Color** = RGB(255, 0, 0)* means we wish to have red at 100% level (255 means 100% of that color) with zero green and zero blue.
 - *ActiveCell.**Offset(1, 0)**.Select* moves the active cell on which the code will execute down by one row and zero columns each time (each loop).
-- 
-
 
 ### Project 1
 
