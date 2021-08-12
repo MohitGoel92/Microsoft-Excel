@@ -1009,7 +1009,7 @@ We observe that the user input is now a numeric value and the IF statement is we
 
 ### Working with Loops to Repeat Blocks of Code
 
-We will be discussing a *Do While Loop*, a very common loop. The Excel *Do While Loop* function is used to loop through a set of defined instructions/code while a specific condition is true. Let's observe the below *VBA* Code:
+We will be discussing a *Do While Loop*, a very common loop. The Excel *Do While Loop* function is used to loop through a set of defined instructions/code while a specific condition is true. Let's observe the below *VBA* Code which is designed to turn a cell red if the number within that cell is greater than 10:
 
 ```
 Public Sub FirstLoop()
@@ -1032,10 +1032,17 @@ Public Sub FirstLoop()
 End Sub
 ```
 
-Where: 
+where: 
 
+- *Dim* stands for dimension which creates some space (plots out some space or the "dimension") of which we can put something inside of. *Dim* creates a standard variable.
+- *i* is the variable name, of which we have arbitrarily set to 1.
+- *Do While i <= 10* ensures that the loop runs until *i* hits a value of 10. In other words, the loop should run 10 times (from *i* = 1 to *i* = 10 inclusively with an incremental step of 1, this is established by the line *i = i + 1*).
+- *As Integer* declares our variable type as an integer. Other types include String, Boolean ... etc.
+- *If* and *End If* are the keywords enclosing the loop.
+- *ActiveCell.Value > 10* is our condition that will decide to either colour the background or not. In this case, if the cell contains a value greater than 10, the background will be coloured.
+- *ActiveCell.**Interior.Color** = RGB(255, 0, 0)* means we wish to have red at 100% level (255 means 100% of that color) with zero green and zero blue.
+- *ActiveCell.**Offset(1, 0)**.Select* moves the active cell on which the code will execute down by one row and zero columns each time (each loop).
 - 
-
 
 
 ### Project 1
