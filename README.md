@@ -1047,6 +1047,29 @@ where:
 
 In this project, we will get acquainted with the Excel Macro recorder. For this project, we will simply record us adding column headers and formatting them to our data. This will then be used to perform the same task in the following tab using the shortcut *CTRL + j*, and using a button on the following tab.
 
-
 ### Project 2
+
+In this project, we will be writing and analysing VBA code which sorts data depending on the user input, therefore being interactive with the user. This will be accomplised by creating variables within a procedure, using logic through *IF* statements, using an *Input Box* object, and a *MSG* box (or message) object.
+
+**Note:** We notice that the project is saved as *.xlsm* which is due to this being a *Macros* enabled document as there is already VBA code contained within the file.
+
+We will be using sorting procedures that only run a single action, command or selection. Let's observe one of the three sorting procedures within the project:
+
+```
+Sub DivisionSort()
+'
+' Sort List by Division Ascending
+'
+
+'
+    Selection.Sort Key1:=Range("A4"), Order1:=xlAscending, Header:=xlGuess, _
+        OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom, _
+        DataOption1:=xlSortNormal
+
+End Sub
+```
+
+where: 
+
+- A4 is the column called "Division" of which will be sorted if the user wishes.
 
