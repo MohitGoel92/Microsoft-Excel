@@ -1080,6 +1080,7 @@ Public Sub UserSortInput()
 
     Dim userInput As String
     Dim promptMSG As String
+    Dim tryAgain As Integer
     
     promptMSG = "Enter a numeric value to sort ..." & vbCrLf & _
         "1 --- Sort by Division" & vbCrLf & _
@@ -1087,7 +1088,19 @@ Public Sub UserSortInput()
         "3 --- Sort by Total"
         
     userInput = InputBox(promptMSG)
-
+    
+    If userInput = "1" Then
+        DivisionSort
+    ElseIf userInput = "2" Then
+        CategorySort
+    ElseIf userInput = "3" Then
+        TotalSort
+    Else
+        tryAgain = MsgBox("Invalid Value! Please Try Again", vbYesNo)
+        If tryAgain = 6 Then
+            UserSortInput
+        End If
+    End If
 
 End Sub
 ```
@@ -1098,4 +1111,13 @@ where:
 - *vbCrLf* is the *Character Return Line Feed* which drops down a line so we can give the user the choices.
 - *& vbCrLf & _* therefore combines the current line with the next line.
 - The variable *userInput* will save the input from the user from the line *userInput = InputBox(promptMSG)*, which will then be used going forward to sort the desired column values.
-- 
+- The *IF* statements are between the *If* and the *End If*. Depending on what the user inputs, if it's "1" then the *Procedure* will execute a *Sort* of the "Division" column, if it's "2" then the *Procedure* will execute a *Sort* of the "Category" column, and if it's a "3" the *Procedure* will execute a *Sort* of the "Total" column.
+- *MsgBox* is a built in Exel function that displays our desired message in the event of an error. In our example, if the user inputs a value of anything other than 1, 2 or 3, we wish to catch it, direct them by explaining what went wrong and how this can be remedied. This also enables us to give the user additional information and be descriptive about it, incase the user has received incorrect information and the remedial procedure or implications of the current situation require action.
+
+**Note:** "TryAgain = 6" refers to the value obtained from the *MsgBox* if the user selects "Yes". Use the below table for clarification:
+
+the MsgBox function returns a number value based on which button the user presses.
+
+<p align="center"> <img width="1200" src= "/Pics/EMB.PNG"> </p>
+
+On our MsgBox, we used a Yes/No button combination. There are other buttons that you can use other than Yes/No.
