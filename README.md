@@ -1114,10 +1114,9 @@ where:
 - The *IF* statements are between the *If* and the *End If*. Depending on what the user inputs, if it's "1" then the *Procedure* will execute a *Sort* of the "Division" column, if it's "2" then the *Procedure* will execute a *Sort* of the "Category" column, and if it's a "3" the *Procedure* will execute a *Sort* of the "Total" column.
 - *MsgBox* is a built in Exel function that displays our desired message in the event of an error. In our example, if the user inputs a value of anything other than 1, 2 or 3, we wish to catch it, direct them by explaining what went wrong and how this can be remedied. This also enables us to give the user additional information and be descriptive about it, incase the user has received incorrect information and the remedial procedure or implications of the current situation require action.
 
-**Note:** "TryAgain = 6" refers to the value obtained from the *MsgBox* if the user selects "Yes". Use the below table for clarification:
-
-the MsgBox function returns a number value based on which button the user presses.
+**Note:** "TryAgain = 6" refers to the value obtained from the *MsgBox* if the user selects "Yes". The *MsgBox* function returns a number value based on which button the user presses. Use the below table for clarification:
 
 <p align="center"> <img width="200" src= "/Pics/EMB.png"> </p>
 
-On our MsgBox, we used a Yes/No button combination. There are other buttons that you can use other than Yes/No.
+On our *MsgBox*, we used a Yes/No button combination. There are other buttons that you can use other than Yes/No.
+
