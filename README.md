@@ -1049,7 +1049,7 @@ In this project, we will get acquainted with the Excel Macro recorder. For this 
 
 ### Project 2
 
-In this project, we will be writing and analysing VBA code which sorts data depending on the user input, therefore being interactive with the user. This will be accomplised by creating variables within a procedure, using logic through *IF* statements, using an *Input Box* object, and a *MSG* box (or message) object.
+In this project, we will be writing and analysing VBA code which sorts data depending on the user input, therefore being interactive with the user. This will be accomplished by creating variables within a procedure, using logic through *IF* statements, using an *Input Box* object, and a *MSG* box (or message) object.
 
 **Note:** We notice that the project is saved as *.xlsm* which is due to this being a *Macros* enabled document as there is already VBA code contained within the file.
 
@@ -1071,5 +1071,31 @@ End Sub
 
 where: 
 
-- A4 is the column called "Division" of which will be sorted if the user wishes.
+- A4 is the first data cell of the column called "Division" of which will be sorted if the user wishes.
 
+To produce a message box in order to be interactive with the user, we will be using the below code:
+
+```
+Public Sub UserSortInput()
+
+    Dim userInput As String
+    Dim promptMSG As String
+    
+    promptMSG = "Enter a numeric value to sort ..." & vbCrLf & _
+        "1 --- Sort by Division" & vbCrLf & _
+        "2 --- Sort by Category" & vbCrLf & _
+        "3 --- Sort by Total"
+        
+    userInput = InputBox(promptMSG)
+
+
+End Sub
+```
+
+where:
+
+- *&* is the ampersand which is used to concatenate or combine.
+- *vbCrLf* is the *Character Return Line Feed* which drops down a line so we can give the user the choices.
+- *& vbCrLf & _* therefore combines the current line with the next line.
+- The variable *userInput* will save the input from the user from the line *userInput = InputBox(promptMSG)*, which will then be used going forward to sort the desired column values.
+- 
