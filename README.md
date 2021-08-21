@@ -1118,6 +1118,6 @@ where:
 
 the MsgBox function returns a number value based on which button the user presses.
 
-<p align="center"> <img width="1200" src= "/Pics/EMB.PNG"> </p>
+<p align="center"> <img width="1200" src= "/Pics/EMB.png"> </p>
 
 On our MsgBox, we used a Yes/No button combination. There are other buttons that you can use other than Yes/No.
