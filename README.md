@@ -1122,3 +1122,7 @@ On our *MsgBox*, we used a Yes/No button combination. There are other buttons th
 
 ### Project 3
 
+In this project, we will be creating three *Procedures*. Two will be recorded using the *Macro* recorder and we will use *VBA* to create our own procedure that makes a call on the two recorded procedures. For example, if we had to clean up data that was on dozens or hundreds of worksheets in order to create a daily report, this process can be automated and completed with the click of one button.
+
+**Note:** Before using macros, ensure a duplicate copy of a worksheet is created as another tab within the workbook to test our code on. In addition, save the document before running any macros as macros cannot be undone. If something goes wrong now, we simply close the document without saving and reopen it. 
+
