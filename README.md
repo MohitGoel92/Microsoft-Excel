@@ -1124,5 +1124,96 @@ On our *MsgBox*, we used a Yes/No button combination. There are other buttons th
 
 In this project, we will be creating three *Procedures*. Two will be recorded using the *Macro* recorder and we will use *VBA* to create our own procedure that makes a call on the two recorded procedures. For example, if we had to clean up data that was on dozens or hundreds of worksheets in order to create a daily report, this process can be automated and completed with the click of one button.
 
-**Note:** Before using macros, ensure a duplicate copy of a worksheet is created as another tab within the workbook to test our code on. In addition, save the document before running any macros as macros cannot be undone. If something goes wrong now, we simply close the document without saving and reopen it. 
+**Note:** Before using macros, ensure a duplicate copy of a worksheet is created as another tab within the workbook to test our code on. In addition, save the document before running any macros as macros cannot be undone. If something goes wrong now, we simply close the document without saving and reopen it.
+
+The two recorded *Macros* we produce in the project have the below *VBA* code:
+
+```
+Sub AddHeaders()
+'
+' AddHeaders Macro
+' This will add headers the columns of data
+'
+
+'
+    Rows("1:1").Select
+    Selection.Insert Shift:=xlDown
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "Region"
+    Range("B1").Select
+    ActiveCell.FormulaR1C1 = "Category"
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "Jan"
+    Range("D1").Select
+    ActiveCell.FormulaR1C1 = "Feb"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "Mar"
+    Range("F1").Select
+    ActiveCell.FormulaR1C1 = "Total"
+    Cells.Select
+    Cells.EntireColumn.AutoFit
+    Rows("1:1").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+End Sub
+Sub FormatHeaders()
+'
+' FormatHeaders Macro
+' This will format the headers
+'
+
+'
+    Range("A1:F1").Select
+    Selection.Font.Bold = True
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = -0.249977111117893
+        .PatternTintAndShade = 0
+    End With
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    Range("G7").Select
+End Sub
+```
+
+The *Procedure* we code ourself in the project that executes the *Macros* on each tab is given below:
+
+```
+Public Sub CleanUpData()
+
+    Dim i As Integer
+    
+    i = 1
+    
+    Do While i <= Worksheets.Count
+        
+        Worksheets(i).Select
+        AddHeaders
+        FormatHeaders
+        
+        i = i + 1
+    
+    Loop
+End Sub
+```
+
+where:
+
+- Each worksheet is selected using the code "Worksheets(i).Select".
+- "AddHeaders" and "FormatHeaders" are the names of the two *Macros* that will run one after the other.
+
+**Note:** Running the macro "CleanUpData" will apply both the procedures to each tab in a flash.
 
