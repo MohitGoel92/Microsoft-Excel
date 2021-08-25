@@ -1217,3 +1217,29 @@ where:
 
 **Note:** Running the macro "CleanUpData" will apply both the procedures to each tab in a flash.
 
+### Project 4
+
+In this project, we will observe the automation of a function inside of excel. In our workbook we have four worksheets, and we will automate the sum function by summing the "Total Expense" column on each worksheet with a click of a single button. The emphasis here will be to explore the technique of utilising variables to help us navigate to the desired cell of which the summation should occur. We will perform this using two steps. We will firstly automate the *SUM* function within excel using *VBA*, and secondly we will automate the *SUM* function to happen across multiple worksheets.
+
+**Note:** Upon observing the worksheets, we notice that although the "Total Expense" column is consistently in column "F", the summation cell for that column is not consistent. We must bear this in mind to accomodate this inconsistency.
+
+The *VBA* code is what we will produce in the project:
+
+```
+Public Sub Automate_Sum()
+    
+    'selects the F2 cell of the active sheet
+    Range("F2").Select
+    
+    'selects the last cell in the column
+    Selection.End(xlDown).Select
+    
+    
+    
+End Sub
+```
+
+where:
+
+- "Range("F2").Select" selects the F2 cell of the active sheet.
+- "Selection.End(xlDown).Select" is similar to selecting *column F + CTRL + Down Arrow*. 
