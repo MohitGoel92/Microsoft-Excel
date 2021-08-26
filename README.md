@@ -1282,3 +1282,87 @@ Public Sub Automate_Sum()
     Loop
 End Sub
 ```
+
+### Project 5
+
+In this project, we will be combining what we have previously learnt. This includes loops, variables, copying and pasting content, making calls to other procedures that we've already created, formatting the data and automating the processes such that they run through all worksheets and populate the last tab with our desired report. Like the previous project, we will be breaking this down into two steps. Firstly, we will be creating a loop for the procedures to loop across all the desried tabs, and secondly we will be creating a procedure that copies and pastes data that creates our report on the final tab.
+
+The *VBA* code used for step one is given below:
+
+```
+Public Sub FinalReportLoop()
+
+    Dim i As Integer
+    
+    i = 1
+    
+    Do While i <= Worksheets.Count - 1
+        Worksheets(i).Select
+        
+        AddHeaders
+        FormatData
+        AutoSum
+        
+        ' Copying the current data
+        range 
+        
+        
+        i = i + 1
+    Loop
+End Sub
+```
+
+where:
+
+- "AddHeaders", "FormatData" and "AutoSum" are procedures we have already made. For the whole code, please see project 5.
+
+The second step required us to copy the data from four tabs and paste it onto the fifth tab for the purpose of creating a report. The *VBA* code for this after the second step has been completed looks like the below:
+
+```
+Public Sub FinalReportLoop()
+
+    Dim i As Integer
+    
+    i = 1
+    
+    Do While i <= Worksheets.Count - 1
+        Worksheets(i).Select
+        
+        AddHeaders
+        FormatData
+        AutoSum
+        
+        ' Copying the current data
+        Range("A1").Select
+        
+        ' Current region is like hitting CTRL + a and all the cells are selected
+        Selection.CurrentRegion.Select
+            
+        Selection.Copy
+        
+        ' Select the final report work sheet called Yearly Report
+        Worksheets("Yearly Report").Select
+        
+        ' Find the empty cells
+        Range("A30000").Select
+        
+        ' We are going up until we hit a populated cell, i.e. a cell with data
+        Selection.End(xlUp).Select
+        
+        ActiveCell.Offset(3, 0).Select
+                
+        ' Paste the new data into the worksheet
+        ActiveSheet.Paste
+                    
+        i = i + 1
+        
+        ' Natural fit columns width per worksheet
+        Columns("A:F").EntireColumn.AutoFit
+    
+    Loop
+    
+    ' Natural fit columns of report worksheet
+    Columns("A:F").EntireColumn.AutoFit
+End Sub
+```
+
