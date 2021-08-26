@@ -1112,7 +1112,7 @@ where:
 - *& vbCrLf & _* therefore combines the current line with the next line.
 - The variable *userInput* will save the input from the user from the line *userInput = InputBox(promptMSG)*, which will then be used going forward to sort the desired column values.
 - The *IF* statements are between the *If* and the *End If*. Depending on what the user inputs, if it's "1" then the *Procedure* will execute a *Sort* of the "Division" column, if it's "2" then the *Procedure* will execute a *Sort* of the "Category" column, and if it's a "3" the *Procedure* will execute a *Sort* of the "Total" column.
-- *MsgBox* is a built in Exel function that displays our desired message in the event of an error. In our example, if the user inputs a value of anything other than 1, 2 or 3, we wish to catch it, direct them by explaining what went wrong and how this can be remedied. This also enables us to give the user additional information and be descriptive about it, incase the user has received incorrect information and the remedial procedure or implications of the current situation require action.
+- *MsgBox* is a built in Excel function that displays our desired message in the event of an error. In our example, if the user inputs a value of anything other than 1, 2 or 3, we wish to catch it, direct them by explaining what went wrong and how this can be remedied. This also enables us to give the user additional information and be descriptive about it, in case the user has received incorrect information and the remedial procedure or implications of the current situation require action.
 
 **Note:** "TryAgain = 6" refers to the value obtained from the *MsgBox* if the user selects "Yes". The *MsgBox* function returns a number value based on which button the user presses. Use the below table for clarification:
 
@@ -1221,7 +1221,7 @@ where:
 
 In this project, we will observe the automation of a function inside of excel. In our workbook we have four worksheets, and we will automate the sum function by summing the "Total Expense" column on each worksheet with a click of a single button. The emphasis here will be to explore the technique of utilising variables to help us navigate to the desired cell of which the summation should occur. We will perform this using two steps. We will firstly automate the *SUM* function within excel using *VBA*, and secondly we will automate the *SUM* function to happen across multiple worksheets.
 
-**Note:** Upon observing the worksheets, we notice that although the "Total Expense" column is consistently in column "F", the summation cell for that column is not consistent. We must bear this in mind to accomodate this inconsistency.
+**Note:** Upon observing the worksheets, we notice that although the "Total Expense" column is consistently in column "F", the summation cell for that column is not consistent. We must bear this in mind to accommodate this inconsistency.
 
 The *VBA* code is what we will produce in the project:
 
@@ -1234,7 +1234,10 @@ Public Sub Automate_Sum()
     'selects the last cell in the column
     Selection.End(xlDown).Select
     
+    lastCell = ActiveCell.Address(False, False)
     
+    ActiveCell.Offset(1, 0).Select
+    ActiveCell.Value = "=SUM(F2:" & lastCell & ")" 
     
 End Sub
 ```
@@ -1242,4 +1245,40 @@ End Sub
 where:
 
 - "Range("F2").Select" selects the F2 cell of the active sheet.
-- "Selection.End(xlDown).Select" is similar to selecting *column F + CTRL + Down Arrow*. 
+- "Selection.End(xlDown).Select" is similar to selecting *column F + CTRL + Down Arrow*.
+- The arguments (False, False) in the parenthesis of "lastCell = ActiveCell.Address(False, False)" is to not allow the dollar signs within the formula or cell reference itself (for the row and column).
+- "ActiveCell.Offset(1, 0).Select" moves to a cell one below and no change to the column, or in other words, the cell below the last populated cell of the column to enable a summation of the column.
+- "ActiveCell.Value = "=SUM(F2:" & lastCell & ")" " is the summation formula.
+
+The first step is now complete and we can successfully run the *VBA* code on our first weeksheet.
+
+**Note:** In our *VBA* view, we are able to run each line of code independently and observe excel doing its work. To do this, we simply hit the *F8* key and the code will run line by line, every time we click *F8*.
+
+The code below is the finished product which loops the automated summation through all worksheets:
+
+```
+Public Sub Automate_Sum()
+    Dim lastCell As String
+    Dim i As Integer
+    
+    i = 1
+    
+    Do While i <= Worksheets.Count
+        
+        Worksheets(i).Select
+            
+        'selects the F2 cell of the active sheet
+        Range("F2").Select
+    
+        'selects the last cell in the column
+        Selection.End(xlDown).Select
+    
+        lastCell = ActiveCell.Address(False, False)
+    
+        ActiveCell.Offset(1, 0).Select
+        ActiveCell.Value = "=SUM(F2:" & lastCell & ")"
+    
+        i = i + 1
+    Loop
+End Sub
+```
