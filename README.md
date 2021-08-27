@@ -1368,15 +1368,21 @@ End Sub
 
 ### Project 6
 
-In this project, we will be talking about User Forms and how we can interact with the user with a drop down menu with buttons the users can click on. The code we created in project 5 will also be incorporated as one of our tools as part of the functionality of the user form. The first step of the project will be to create a user interface of the user form. The user form will interact with all the worksheets, add worksheets and run the final report. Let's start building the user form inside of our *VBA* window.
+In this project, we will be talking about User Forms and how we can interact with the user with a drop down menu with buttons the users can click on. The code we created in project 5 will also be incorporated as one of our tools as part of the functionality of the user form. The first step of the project will be to create a user interface of the user form. The user form will interact with all the worksheets, add worksheets and run the final report. 
+
+By using forms and the many controls and objects that you can add to them, you can make data entry on your worksheets easier and improve the way your worksheets look. You can also do this yourself with little or no need for Microsoft Visual Basic for Applications (VBA) code.
+
+A worksheet form is not the same thing as an Excel template. A template is a pre-formatted file that can get you started creating a workbook that looks the way you want. A form contains controls, such as boxes or dropdown lists, that can make it easier for people who use your worksheet to enter or edit data.
+
+Let's start building the user form inside of our *VBA* window.
 
 In the *VBA* window, when we wanted to create a procedure we navigated to the *toolbar* at the top -> *Insert* -> *Module* -> Create our procedure within the *VBA* window. To create a form, we navigate to the *toolbar* -> *Insert* -> *UserForm*. We now observe a new folder called *Forms*.
 
-The picture below shows us the above and the *Toolbox* button used for creating features on the user from box.
+The picture below shows us the above and the *Toolbox* button used for creating features on the user form box.
 
 <p align="center"> <img width="600" src= "/Pics/userform.PNG"> </p>
 
-**Note:** To make this form interactive, we must start writing code within the *VBA* window. To start writing code, click twice on the box with the dotted background. TO write code for each specific part of the form, select that individual box or labal and double click it. 
+**Note:** To make this form interactive, we must start writing code within the *VBA* window. To start writing code, click twice on the box with the dotted background. To write code for each specific part of the form, select that individual box or label and double click it. 
 
 Currently, the code looks like the below:
 
@@ -1399,3 +1405,200 @@ where:
 - "Private" means it's private and specific to this form.
 - "Sub" means it's a sub procedure.
 
+The *VBA* code used for this project, after altering the above will look like the below:
+
+```
+' We want the drop down menu to be populated with the various worksheet names
+' as soon as someone opens the form. Otherwise, it will only happen if someone
+' clicks the form. We therefore change from a click event to an initialize event.
+
+' Drop down menu code: When a user selects that worksheet, that worksheet should open.
+
+Private Sub ComboBox1_Change()
+    Worksheets(Me.ComboBox1.Value).Select
+
+End Sub
+
+' Add Sheet button: We want that button to create a new worksheet to the left (first sheet)
+' and be able to name that sheet also.
+
+Private Sub CommandButtonAddSheet_Click()
+    Worksheets().Add before:=Worksheets(1)
+    
+    ActiveSheet.Name = InputBox("Please enter new worksheet name")
+End Sub
+
+' Run report button: This will run/create our desired report on the last tab. The code used
+' here will be the same as the code used in the previous project. The code can be found in
+' the Modules folder (it is called FinalReport).
+
+Private Sub CommandButtonRunReport_Click()
+    FinalReportTab
+End Sub
+
+' Initialize means, as soon as the workbook opens up, the initialized event runs.
+
+
+Private Sub UserForm_Initialize()
+    
+    Dim i As Integer
+    
+    ' If you do not specify what a variable is if you set it to an integer,
+    ' it will set it to 0 as default
+    
+    i = 1
+    
+    Do While i <= Worksheets.Count
+        ' me is short for referencing the form itself (Final Report)
+        Me.ComboBox1.AddItem Worksheets(i).Name
+        i = i + 1
+    Loop
+End Sub
+```
+
+The "FinalReportTab" has the code given below:
+
+```
+Public Sub FinalReportTab()
+
+    Dim i As Integer
+    
+    i = 1
+    
+    For i = 1 To Worksheets.Count - 1
+        Worksheets(i).Select
+        
+' Copying the current data
+        Range("A1").Select
+        
+' If cell A1 is empty, then ignore (in case the sheet is blank).
+
+        If ActiveCell.Value <> "" Then
+        
+            AutoSum
+            AddHeaders
+            FormatData
+            
+            Range("A2").Select
+            
+' Current region is like hitting CTRL + a and all the cells are selected
+            Selection.CurrentRegion.Select
+            
+            
+            Selection.Copy
+            
+' Select the final report worksheet called Yearly Report
+            
+            Worksheets("Yearly Report").Select
+            
+' Find the empty cells
+            Range("A30000").Select
+            
+' We are going up until we hit a populated cell, i.e. a cell with data
+            Selection.End(xlUp).Select
+            
+            ActiveCell.Offset(3, 0).Select
+            
+' Paste the new data into the worksheet
+            ActiveSheet.Paste
+            
+        End If
+    Next i
+    
+Columns("A:F").EntireColumn.AutoFit
+End Sub
+
+
+Public Sub AutoSum()
+    Dim lastCell As String
+    
+    Range("F2").Select
+    
+    Selection.End(xlDown).Select
+    lastCell = ActiveCell.Address
+    
+    ActiveCell.Offset(1, 0).Select
+    
+    
+' We are taking the summation of all the values from F2 until the last cell
+    ActiveCell.Value = "=SUM(F2:" + lastCell + ")"
+    ActiveCell.Font.Bold = True
+    
+Columns("A:F").EntireColumn.AutoFit
+End Sub
+
+Sub AddHeaders()
+'
+' AddHeaders Macro
+'
+
+'
+    Rows("1:1").Select
+    Selection.Insert Shift:=xlDown
+    ActiveWindow.SmallScroll Down:=-3
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "Division"
+    Range("B1").Select
+    ActiveCell.FormulaR1C1 = "Category"
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "Jan"
+    Range("D1").Select
+    ActiveCell.FormulaR1C1 = "Feb"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "Mar"
+    Range("F1").Select
+    ActiveCell.FormulaR1C1 = "Total Expense"
+    Range("A2").Select
+
+Columns("A:F").EntireColumn.AutoFit
+End Sub
+
+Sub FormatData()
+'
+' FormatData Macro
+'
+
+'
+    Range("A1:F1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = -0.249977111117893
+        .PatternTintAndShade = 0
+    End With
+    With Selection.Font
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = 0
+    End With
+    Selection.Font.Bold = True
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Range("C2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Selection.Style = "Currency"
+    Range("A2").Select
+    
+Columns("A:F").EntireColumn.AutoFit
+End Sub
+```
+
+As a final step, we wish to have the "User Form" open to the user as soon as the workbook is open to avoid the user searching for it via the *VBA* or *Macros* options. To do this, we simply navigate the to *VBA* window -> *ThisWorkbook* on the left -> Select from *General* to *Workbook* at the top and simply type the below code:
+
+```
+Private Sub Workbook_Open()
+    FinalReport.Show
+End Sub
+```
