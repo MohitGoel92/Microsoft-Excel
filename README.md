@@ -1374,4 +1374,4 @@ In the *VBA* window, when we wanted to create a procedure we navigated to the *t
 
 The picture below shows us the above and the *Toolbox* button used for creating features on the user from box.
 
-<p align="center"> <img width="200" src= "/Pics/userform.PNG"> </p>
+<p align="center"> <img width="600" src= "/Pics/userform.PNG"> </p>
