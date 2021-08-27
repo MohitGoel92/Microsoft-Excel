@@ -1375,3 +1375,27 @@ In the *VBA* window, when we wanted to create a procedure we navigated to the *t
 The picture below shows us the above and the *Toolbox* button used for creating features on the user from box.
 
 <p align="center"> <img width="600" src= "/Pics/userform.PNG"> </p>
+
+**Note:** To make this form interactive, we must start writing code within the *VBA* window. To start writing code, click twice on the box with the dotted background. TO write code for each specific part of the form, select that individual box or labal and double click it. 
+
+Currently, the code looks like the below:
+
+```
+Private Sub Label1_Click()
+
+End Sub
+
+Private Sub FinalReport_Click()
+
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub
+```
+
+where:
+
+- "Private" means it's private and specific to this form.
+- "Sub" means it's a sub procedure.
+
