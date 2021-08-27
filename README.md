@@ -1285,7 +1285,7 @@ End Sub
 
 ### Project 5
 
-In this project, we will be combining what we have previously learnt. This includes loops, variables, copying and pasting content, making calls to other procedures that we've already created, formatting the data and automating the processes such that they run through all worksheets and populate the last tab with our desired report. Like the previous project, we will be breaking this down into two steps. Firstly, we will be creating a loop for the procedures to loop across all the desried tabs, and secondly we will be creating a procedure that copies and pastes data that creates our report on the final tab.
+In this project, we will be combining what we have previously learnt. This includes loops, variables, copying and pasting content, making calls to other procedures that we've already created, formatting the data and automating the processes such that they run through all worksheets and populate the last tab with our desired report. Like the previous project, we will be breaking this down into two steps. Firstly, we will be creating a loop for the procedures to loop across all the desired tabs, and secondly we will be creating a procedure that copies and pastes data that creates our report on the final tab.
 
 The *VBA* code used for step one is given below:
 
@@ -1340,7 +1340,7 @@ Public Sub FinalReportLoop()
             
         Selection.Copy
         
-        ' Select the final report work sheet called Yearly Report
+        ' Select the final report worksheet called Yearly Report
         Worksheets("Yearly Report").Select
         
         ' Find the empty cells
@@ -1366,3 +1366,12 @@ Public Sub FinalReportLoop()
 End Sub
 ```
 
+### Project 6
+
+In this project, we will be talking about User Forms and how we can interact with the user with a drop down menu with buttons the users can click on. The code we created in project 5 will also be incorporated as one of our tools as part of the functionality of the user form. The first step of the project will be to create a user interface of the user form. The user form will interact with all the worksheets, add worksheets and run the final report. Let's start building the user form inside of our *VBA* window.
+
+In the *VBA* window, when we wanted to create a procedure we navigated to the *toolbar* at the top -> *Insert* -> *Module* -> Create our procedure within the *VBA* window. To create a form, we navigate to the *toolbar* -> *Insert* -> *UserForm*. We now observe a new folder called *Forms*.
+
+The picture below shows us the above and the *Toolbox* button used for creating features on the user from box.
+
+<p align="center"> <img width="200" src= "/Pics/userform.png"> </p>
