@@ -1043,11 +1043,11 @@ where:
 - *ActiveCell.**Interior.Color** = RGB(255, 0, 0)* means we wish to have red at 100% level (255 means 100% of that color) with zero green and zero blue.
 - *ActiveCell.**Offset(1, 0)**.Select* moves the active cell on which the code will execute down by one row and zero columns each time (each loop).
 
-### Project 1
+### Project 1: Introducing the Macro Recorder
 
 In this project, we will get acquainted with the Excel Macro recorder. For this project, we will simply record us adding column headers and formatting them to our data. This will then be used to perform the same task in the following tab using the shortcut *CTRL + j*, and using a button on the following tab.
 
-### Project 2
+### Project 2: Introducing VBA Code
 
 In this project, we will be writing and analysing VBA code which sorts data depending on the user input, therefore being interactive with the user. This will be accomplished by creating variables within a procedure, using logic through *IF* statements, using an *Input Box* object, and a *MSG* box (or message) object.
 
@@ -1120,7 +1120,7 @@ where:
 
 On our *MsgBox*, we used a Yes/No button combination. There are other buttons that you can use other than Yes/No.
 
-### Project 3
+### Project 3: Data Preparation and Cleaning
 
 In this project, we will be creating three *Procedures*. Two will be recorded using the *Macro* recorder and we will use *VBA* to create our own procedure that makes a call on the two recorded procedures. For example, if we had to clean up data that was on dozens or hundreds of worksheets in order to create a daily report, this process can be automated and completed with the click of one button.
 
@@ -1217,7 +1217,7 @@ where:
 
 **Note:** Running the macro "CleanUpData" will apply both the procedures to each tab in a flash.
 
-### Project 4
+### Project 4: Automating Excel Formulas
 
 In this project, we will observe the automation of a function inside of excel. In our workbook we have four worksheets, and we will automate the sum function by summing the "Total Expense" column on each worksheet with a click of a single button. The emphasis here will be to explore the technique of utilising variables to help us navigate to the desired cell of which the summation should occur. We will perform this using two steps. We will firstly automate the *SUM* function within excel using *VBA*, and secondly we will automate the *SUM* function to happen across multiple worksheets.
 
@@ -1283,7 +1283,7 @@ Public Sub Automate_Sum()
 End Sub
 ```
 
-### Project 5
+### Project 5: Using Projects 1-4 to Create a Report
 
 In this project, we will be combining what we have previously learnt. This includes loops, variables, copying and pasting content, making calls to other procedures that we've already created, formatting the data and automating the processes such that they run through all worksheets and populate the last tab with our desired report. Like the previous project, we will be breaking this down into two steps. Firstly, we will be creating a loop for the procedures to loop across all the desired tabs, and secondly we will be creating a procedure that copies and pastes data that creates our report on the final tab.
 
@@ -1366,7 +1366,7 @@ Public Sub FinalReportLoop()
 End Sub
 ```
 
-### Project 6
+### Project 6: User Forms
 
 In this project, we will be talking about User Forms and how we can interact with the user with a drop down menu with buttons the users can click on. The code we created in project 5 will also be incorporated as one of our tools as part of the functionality of the user form. The first step of the project will be to create a user interface of the user form. The user form will interact with all the worksheets, add worksheets and run the final report. 
 
@@ -1602,3 +1602,9 @@ Private Sub Workbook_Open()
     FinalReport.Show
 End Sub
 ```
+
+### Project 7: Importing Data from External Files
+
+In this project, we will be creating a *Macro* which opens up a browser window which enables us to select a file(s) to import. Each file, for instance text files, will be a seperate worksheet in our workbook. The topics we will cover are variables, loops, the application object with the methods and properties.
+
+In our first step, we will import a single text file into our workbook and then cerate a proecure 
