@@ -1712,6 +1712,80 @@ End Sub
 Now, if we wanted to make this more dynamic for our users, we must give them the option to select as many files as they wish to import. Allowing this successfully will result in the code being as below:
 
 ```
-
-
+Public Sub ImportTextFile()
+    
+    ' The brackets create/denote the variable as an array
+    ' (Collection of objects that holds multiple values/collection of content)
+    ' The variant type allows us to equate the variable to anything we like
+    
+    Dim OpenFiles() As Variant
+    Dim TextFile As Workbook
+    
+    Dim i As Integer
+    
+    ' This creates the browse window when selecting files to import
+    ' Multiselect allows the user to select multiple files
+    
+    OpenFiles = Application.GetOpenFilename(Title:="Select Files(s) to Import", MultiSelect:=True)
+    
+    ' During the process of running the macro, we notice there is screen flicker as the
+    ' macro opens the file, goes to the file, finds the range of data, copies it, goes
+    ' back to the other workbook and pastes the data. The screen flicker is due to files
+    ' opening and closing many times. The application is Excel.
+    
+    Application.ScreenUpdating = False
+        
+    
+    ' The first item in the array is at index position one, second at two ... etc
+    ' At this point, even if users select multiple files, the code will still only pick one
+    ' However, the code still makes the user experience more dynamic
+        
+    ' The below is a dynamic count which is based on how many files the user has selected
+    For i = 1 To Application.CountA(OpenFiles)
+        
+        Set TextFile = Workbooks.Open(OpenFiles(i))
+        
+        ' Get into the Excel file which contains the text file data
+        ' and the only sheet in there (sheet(1)), A1 is where the data
+        ' starts at, CurrentRegion will select all, and copy will copy the data
+    
+        TextFile.Sheets(1).Range("A1").CurrentRegion.Copy
+    
+        ' Workbooks object is an array (collection) of all open workbooks
+        ' We go to the first workbook (the first instance of excel that was opened)
+        ' and activate it
+    
+        Workbooks(1).Activate
+          
+        ' The below will add a worksheet so we do not keep pasting data onto the same
+        ' worksheet at the same place on the worksheet
+        
+        Workbooks(1).Worksheets.Add
+                
+        ' The current sheet in our originally opened (first workbook opened) and
+        ' paste data within there
+        
+        ActiveSheet.Paste
+        
+        ' This will rename the excel worksheet to the name as the text file we are importing
+        ' the data from
+        
+        ActiveSheet.Name = TextFile.Name
+        
+        ' This clears the clipboard message that keeps prompting us
+        
+        Application.CutCopyMode = False
+    
+        ' Closing the excel sheet that opened up due to copying the data from the
+        ' text file using the file path
+    
+        TextFile.Close
+        
+    ' Repeat the process for the next i (selected text file)
+    Next i
+    
+    ' Turn screen updating on again as it was turned off due to screen flicker
+    Application.ScreenUpdating = True
+End Sub
 ```
+
