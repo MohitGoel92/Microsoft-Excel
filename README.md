@@ -1607,6 +1607,8 @@ End Sub
 
 In this project, we will be creating a *Macro* which opens up a browser window which enables us to select a file(s) to import. Each file, for instance text files, will be a seperate worksheet in our workbook. The topics we will cover are variables, loops, the application object with the methods and properties.
 
+**Note:** The shortcut key for our *VBA* window is *ALT + F11*.
+
 In our first step, we will import a single text file into a workbook by creating a procedure which opens a new Excel workbook. The *VBA* code for this looks like the below:
 
 ```
@@ -1707,3 +1709,9 @@ Public Sub ImportTextFile()
 End Sub
 ```
 
+Now, if we wanted to make this more dynamic for our users, we must give them the option to select as many files as they wish to import. Allowing this successfully will result in the code being as below:
+
+```
+
+
+```
