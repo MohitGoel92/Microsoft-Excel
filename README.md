@@ -1607,4 +1607,103 @@ End Sub
 
 In this project, we will be creating a *Macro* which opens up a browser window which enables us to select a file(s) to import. Each file, for instance text files, will be a seperate worksheet in our workbook. The topics we will cover are variables, loops, the application object with the methods and properties.
 
-In our first step, we will import a single text file into our workbook and then cerate a proecure 
+In our first step, we will import a single text file into a workbook by creating a procedure which opens a new Excel workbook. The *VBA* code for this looks like the below:
+
+```
+Public Sub ImportTextFile()
+    
+    Dim TextFile As Workbook
+    Set TextFile = Workbooks.Open("C:\Users\mohit\Desktop\Excel\Excel Worksheets\Projects\Project 7\April2015Sales.txt")
+    
+End Sub
+```
+
+where:
+
+- "TextFile" makes reference to the text file (csv, tab delimited ... etc) we are opening in Excel.
+- "Workbook" is the variable type.
+- "Set" is used because, before we can make an object such as a text file equal to something, it must first be set.
+- "Worksbooks" is the object.
+- "Open" is the method.
+
+Now, we will modify our *Procedure* that copies the data from the text file to our current Excel document that we started in:
+
+```
+Public Sub ImportTextFile()
+    
+    Dim TextFile As Workbook
+    Set TextFile = Workbooks.Open("C:\Users\mohit\Desktop\Excel\Excel Worksheets\Projects\Project 7\April2015Sales.txt")
+    
+    ' Get into the Excel file which contains the text file data
+    ' and the only sheet in there (sheet(1)), A1 is where the data
+    ' starts at, CurrentRegion will select all, and copy will copy the data
+    
+    TextFile.Sheets(1).Range("A1").CurrentRegion.Copy
+    
+    ' Workbooks object is an array (collection) of all open workbooks
+    ' We go to the first workbook (the first instance of excel that was opened)
+    ' and activate it
+    
+    Workbooks(1).Activate
+    
+    ' The current sheet in our originally opened (first workbook opened) and
+    ' paste data within there
+    
+    ActiveSheet.Paste
+    
+    ' Closing the excel sheet that opened up due to copying the data from the
+    ' text file using the file path
+    
+    TextFile.Close
+    
+End Sub
+```
+
+We notice that the procedure is referencing a very specific text file and it will always be that text file whenever we run our macro. However, we wish to make this more dynamic so our user can choose to select whichever or however many text files they wish, reagardless of the file locations(s). Giving the user the freedom to choose which file they wish to import data from results in the below code:
+
+```
+Public Sub ImportTextFile()
+    
+    ' The brackets create/denote the variable as an array
+    ' (Collection of objects that holds multiple values/collection of content)
+    ' The variant type allows us to equate the variable to anything we like
+    
+    Dim OpenFiles() As Variant
+    Dim TextFile As Workbook
+    
+    ' This creates the browse window when selecting files to import
+    ' Multiselect allows the user to select multiple files
+    
+    OpenFiles = Application.GetOpenFilename(Title:="Select Files(s) to Import", MultiSelect:=True)
+    
+    ' The first item in the array is at index position one, second at two ... etc
+    ' At this point, even if users select multiple files, the code will still only pick one
+    ' However, the code still makes the user experience more dynamic
+    
+    Set TextFile = Workbooks.Open(OpenFiles(1))
+        
+    ' Get into the Excel file which contains the text file data
+    ' and the only sheet in there (sheet(1)), A1 is where the data
+    ' starts at, CurrentRegion will select all, and copy will copy the data
+    
+    TextFile.Sheets(1).Range("A1").CurrentRegion.Copy
+    
+    ' Workbooks object is an array (collection) of all open workbooks
+    ' We go to the first workbook (the first instance of excel that was opened)
+    ' and activate it
+    
+    Workbooks(1).Activate
+    
+    ' The current sheet in our originally opened (first workbook opened) and
+    ' paste data within there
+    
+    ActiveSheet.Paste
+    
+    ' Closing the excel sheet that opened up due to copying the data from the
+    ' text file using the file path
+    
+    TextFile.Close
+    
+End Sub
+```
+
