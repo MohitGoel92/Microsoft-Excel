@@ -1709,7 +1709,7 @@ Public Sub ImportTextFile()
 End Sub
 ```
 
-Now, if we wanted to make this more dynamic for our users, we must give them the option to select as many files as they wish to import. Allowing this successfully will result in the code being as below:
+Now, if we wanted to make this more dynamic for our users, we must give them the option to select as many files as they wish to import. Allowing this will result in the code being as below:
 
 ```
 Public Sub ImportTextFile()
@@ -1789,3 +1789,4 @@ Public Sub ImportTextFile()
 End Sub
 ```
 
+As a final part to the project, we will discuss how to reuse our code and not type it out all over again as and when required. 
