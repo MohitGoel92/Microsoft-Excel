@@ -1789,4 +1789,49 @@ Public Sub ImportTextFile()
 End Sub
 ```
 
-As a final part to the project, we will discuss how to reuse our code and not type it out all over again as and when required. 
+As a final part to the project, we will discuss how to reuse our code as and when required instead of writing it out all over again. We will take a portion of our code (procedure) called "ImportTextFile" and break it out of the procedure. We will remove it and create a new *Procedure*. The resultant *VBA* code is given below:
+
+```
+' Sub procedures only run code/steps/the procedure. But we need a procedure that returns the
+' value which we can then use (e.g. how many files the user chose).
+' For this we need the Function procedure.
+
+
+Public Sub ImportTextFile()
+        
+    Dim OpenFiles() As Variant
+    Dim TextFile As Workbook
+    Dim i As Integer
+    
+' Openfiles is equal to the function created in the next procedure
+    
+    OpenFiles = GetFiles()
+    
+    Application.ScreenUpdating = False
+        
+    For i = 1 To Application.CountA(OpenFiles)
+        
+        Set TextFile = Workbooks.Open(OpenFiles(i))
+        TextFile.Sheets(1).Range("A1").CurrentRegion.Copy
+        Workbooks(1).Activate
+        Workbooks(1).Worksheets.Add
+        ActiveSheet.Paste
+        ActiveSheet.Name = TextFile.Name
+        Application.CutCopyMode = False
+        TextFile.Close
+    
+    Next i
+    Application.ScreenUpdating = True
+End Sub
+
+' We set the GetFiles Function procedure as a variant which means it can be anything.
+' Note: A function always returns a value back to you
+
+Public Function GetFiles() As Variant
+
+' The GetFiles prodecure we created (above) is equal to the GetOpenFilename method (below)
+
+    GetFiles = Application.GetOpenFilename(Title:="Select Files(s) to Import", MultiSelect:=True)
+
+End Function
+```
